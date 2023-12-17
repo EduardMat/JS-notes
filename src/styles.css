@@ -37,11 +37,9 @@ button:hover{
     color:blue;
     text-align: center;
     border-radius: 4px;
-    padding:3px;
 }
 
 .container{
-    padding:15px;
 }
 
 .left{

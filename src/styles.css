@@ -3,7 +3,6 @@ header{
     url("./header.jpg");
   filter: contrast(90%);
   filter: brightness(130%);
-  width:1400px;
   height: 170px;
 
 }
@@ -12,6 +11,7 @@ header{
 h1{
     color: blue;
     text-align: center;
+    padding:10px;
 }
 
 h2{
@@ -45,7 +45,16 @@ button:hover{
 .left{
     color:white;
     text-align: left;
+}
+
+.title{
+    color:rgb(95, 93, 93);
+    text-align: center;
     padding: 10px;
+    margin:15px;
+    font-size: 40px;
+    font-family: cursive;
+
 }
 
 .example{

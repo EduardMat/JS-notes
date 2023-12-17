@@ -7,8 +7,11 @@
     <title>JS notes</title>
   </head>
   <body>
-    <div>
-      <h1>JS notes taken in my way</h1>
+    <header>
+        <h1 class="left">JavaScript to my understanding </h1>
+    </header>
+    <div class="container">
+      <div class=" ">JS notes taken in my way </div>
       <p>
         I had difficulties trying to learn JS, doing it in a structural,
         systematic way.I felt that I learn bites and pieces, having pieces
@@ -27,10 +30,10 @@
         <h3>
           Usually, you can inject JS scrips in the head (CDP) or you add them
           just before the /body.However, JS has powerful tools, which could be
-          used even to change the HTML content as in the example bellow, even
+          used even to change the HTML content as in the examples bellow, even
           used straight in the body:
         </h3>
-        <p>Example:</p>
+        <p class="example">Example:</p>
         <p id="demo">Java script change of content</p>
 
         <button
@@ -44,7 +47,7 @@
 
       <div>
         <h3>JS can change the HTML attribute values:</h3>
-        <p>Example:</p>
+        <p class="example">Example:</p>
 
         <button
           onClick="document.getElementById(`myImage`).src=`./src/pic_bulbon.gif`"
@@ -63,7 +66,7 @@
 
       <div>
         <h3>JS can change the style of an element</h3>
-        <p>Example:</p>
+        <p class="example">Example:</p>
         <p id="demoTwo">Style change</p>
         <button
           type="button"

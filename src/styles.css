@@ -1,4 +1,60 @@
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./header.jpg");
+  filter: contrast(90%);
+  filter: brightness(130%);
+  width:1400px;
+  height: 170px;
+
+}
+
+
 h1{
     color: blue;
     text-align: center;
+}
+
+h2{
+    color:rgb(87, 86, 86);
+
+
+}
+
+h3{
+    color:#870FE6;
+}
+
+button{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    border-radius: 4px;
+    padding:3px;
+}
+
+button:hover{
+    background-color:white;
+    color:blue;
+    text-align: center;
+    border-radius: 4px;
+    padding:3px;
+}
+
+.container{
+    padding:15px;
+}
+
+.left{
+    color:white;
+    text-align: left;
+    padding: 10px;
+}
+
+.example{
+    color:rgb(47, 144, 111);
+    font-weight: 600;
+    border:1px solid rgb(175, 173, 173);
+    border-radius: 4px;
+    background: rgb(225, 223, 223);
+    max-width: 70px;
 }

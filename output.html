@@ -14,6 +14,7 @@
         <li>Writing into an HTML element, using <strong>innerHTML.</strong></li>
         <li>Writting into the HTML using <strong>document.write()</strong></li>
         <li>Writing into an alert box, using <strong>window.alert()</strong></li>
+        <li>Java script print using <strong>window.print()</strong></li>
         <li>Writing into the browser console, using <strong>console.log()</strong></li>
     </ul>
 
@@ -28,6 +29,7 @@
 
 <div>
     <h2>2.Using <strong> document.write()</strong></h2>
+    <p>This method should only be used for testing.The method will delete all the exiting HTML on loading.</p>
     <p>Bellow will be displayed data following an addition 5+6 inserted in document.write()- see open VS </p>
 
     <script>
@@ -35,6 +37,37 @@
     </script>
 </div>
 
+<div>
+    <h2>3.Using <strong>window.alert()</strong></h2>
+    <p>The window word can be skipped.</p>
+    <p>   </p>
+
+    <script>
+        window.alert(5 + 6);
+    </script>
+</div>
+
+<div>
+    <h2>4.Using <strong>window.print()</strong>method</h2>
+    <p>By clicking the button, you can print this page</p>
+    <p>   </p>
+<button
+onClick="window.print()"
+>
+Print this page
+</button>
+</div>
+
+
+<div>
+    <h2>5.Using <strong>console.log()</strong></h2>
+    <p>This method is mainly used to debug.</p>
+    <p>   </p>
+
+    <script>
+        console.log(5 + 6);
+    </script>
+</div>
 
 
 

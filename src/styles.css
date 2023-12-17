@@ -9,19 +9,28 @@ header{
 
 
 h1{
-    color: blue;
+    color:rgb(64, 203, 150);
     text-align: center;
     padding:10px;
 }
 
 h2{
     color:rgb(87, 86, 86);
+    margin:10px;
+    padding:15px;
 
 
 }
 
 h3{
     color:#870FE6;
+    margin:10px;
+    padding:15px;
+}
+
+p{
+    margin:10px;
+    padding:15px;
 }
 
 button{
@@ -30,6 +39,7 @@ button{
     text-align: center;
     border-radius: 4px;
     padding:3px;
+    margin:10px;
 }
 
 button:hover{
@@ -37,9 +47,12 @@ button:hover{
     color:blue;
     text-align: center;
     border-radius: 4px;
+    margin:10px;
 }
 
 .container{
+    padding:15px;
+    margin:10px;
 }
 
 .left{
@@ -64,4 +77,5 @@ button:hover{
     border-radius: 4px;
     background: rgb(225, 223, 223);
     max-width: 70px;
+    padding:15px;
 }

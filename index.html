@@ -3,53 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href= "./src/styles.css"> 
     <title>JS notes</title>
   </head>
   <body>
     <div>
       <h1>JS notes taken in my way</h1>
       <p>
-        I had difficulties trying to learn JS, doing it in a structural, systematic
-        way.I felt that I learn bites and pieces, having pieces missing, like in a puzzle.While doing some reaserch and trying to fix an issue with my coding, I have found our the
-        way W3School has the JS explained.I liked the way is structured, easy to
-        follow and organised.So I decided to take few notes for personal use,
-        and to learn by writting, too.
+        I had difficulties trying to learn JS, doing it in a structural,
+        systematic way.I felt that I learn bites and pieces, having pieces
+        missing, like in a puzzle.While doing some reaserch and trying to fix an
+        issue with my coding, I have found our the way W3School has the JS
+        explained.I liked the way is structured, easy to follow and organised.So
+        I decided to take few notes for personal use, and to learn by writting,
+        too.
       </p>
-      <p>Bellow will be all the links leading to the each chapter, each link taking care of a JS aspect.</p>
 
       <div>
-        <h2>Before to start, there are few interesting things about JS, check them out:</h2>
-        <p>JS has powerful tools, which could be used even to change the HTML content as in the example bellow, even used straight in the body:</p>
-        <h3>Example:</h3>
+        <h2>
+          Before to start, there are few interesting things about JS, check them
+          out:
+        </h2>
+        <h3>
+          Usually, you can inject JS scrips in the head (CDP) or you add them
+          just before the /body.However, JS has powerful tools, which could be
+          used even to change the HTML content as in the example bellow, even
+          used straight in the body:
+        </h3>
+        <p>Example:</p>
         <p id="demo">Java script change of content</p>
-        
-    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
 
+        <button
+          type="button"
+          onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'
+        >
+          Click Me!
+        </button>
       </div>
-      <hr>  
+      <hr />
+
       <div>
-        <p>JS can change the HTML attribute values:</p>
-        <h3>Example:</h3>
-        
-    <button
-    onClick="document.getElementById(`myImage`).src=`./src/pic_bulbon.gif`"        >
-Turn on the light
-    </button>
-    <img id="myImage" src="./src/pic_bulboff.gif" style="width:100px" />
+        <h3>JS can change the HTML attribute values:</h3>
+        <p>Example:</p>
 
-<button
-    onClick="document.getElementById(`myImage`).src=`./src/pic_bulboff.gif`"        >
-Turn off the light
-    </button>
-    <hr>
-    
+        <button
+          onClick="document.getElementById(`myImage`).src=`./src/pic_bulbon.gif`"
+        >
+          Turn on the light
+        </button>
+        <img id="myImage" src="./src/pic_bulboff.gif" style="width: 100px" />
 
-
-
-
+        <button
+          onClick="document.getElementById(`myImage`).src=`./src/pic_bulboff.gif`"
+        >
+          Turn off the light
+        </button>
       </div>
-        
+      <hr />
 
+      <div>
+        <h3>JS can change the style of an element</h3>
+        <p>Example:</p>
+        <p id="demoTwo">Style change</p>
+        <button
+          type="button"
+          onClick="document.getElementById(`demoTwo`).style.fontSize= `55px`"
+        >
+          Click Me
+        </button>
+      </div>
+      <hr />
+      <p>
+        Bellow will be all the links leading to the each chapter, each link
+        taking care of a JS aspect.
+      </p>
     </div>
   </body>
 </html>

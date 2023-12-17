@@ -9,25 +9,78 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./src/styles.css" />\
+    <link rel="stylesheet" href="./src/styles.css" />
     <title>JS Statement</title>
 </head>
 <body>
-    <h>Java Script Statement</h>
+    <h1>Java Script Statement</h1>
     <div>
- <p>JavaScript is a list of statements to be executed by a computer.</p>
+ <p> JavaScript is a list of statements to be executed by a computer.</p>
 
- <p id="demo"></p>
+ <p id="demoOne"></p>
 <script>
     let x, y, z;   //Statement 1
     x = 5;         //Statement 2 
     y = 6;         //Statement 3
     z = x + y;     //Statement 4
 
-document.getElementById("demo").innerHTML = "The value of z is" + z + ".";  
-
-
+document.getElementById("demoOne").innerHTML = "The value of z is" +  z  + " .";  
 </script>
+
+ <p>A computer program is a list of "instructions" to be executed by a computer.</p>
+ <p>In a programming language, these programming instructions are called <b>statements</b></p>
+ <p>A JavaScript program is a list of statements (instructions).</p>
+
+ <h3>JavaScript statements are:</h3>
+ <ul>
+    <li>Values=> data stored in a variable or constant, can be primitive (a number, string, bolean) and non-primitive (object, functions, arrays).</li>
+    <li>Operators=> are symbols for additions, multiplications, etc (+, *, =) </li>
+    <li>Expressions=> example : 3 + 4 = 7 (3 and 4 are operants, + and = are operators and the 7 is the value) </li>
+    <li>Keywords=> are reserved words which cannot be used to indicate variables(eg. async, let ).There are 63 pf rezerved words.</li>
+    <li>Comments=> usually starting with "//" is a piece of text within a program which is not executed but provide more info about that code  </li>
+ </ul>
+
+ <p class="example">Example</p>
+ <p>In HTML, JavaScrip statements(instructions) are executed by the browser.</p>
+ <p id="demoTwo"></p>
+ <script>
+  document.getElementById("demoTwo").innerHTML = "Hello Dolly"
+ </script>
+  
+<h3>Semicolons</h3>
+<ul>
+    <li>let a, b, c; //declare 3 variables </li>
+    <li>a = 5;       //assign the value 5 to a</li>
+    <li>b = 6;       //assign the value 6 to b </li>
+    <li>a = a + b;   //assign the sum of a and b to c </li>
+</ul>
+<h3>When separated by semicolons, you are allowed to have multiple statements on one line:</h3>
+<p class="example">Example</p>
+<p> a = 5; b = 6; c = a + b; </p>
+
+<h3>JavaScript Code Blocks</h3>
+<p>JavaScript statements can be grouped together in code blocks, inside curly brackets{...}, with the purpose to be executed together.The blocks can be found in JavaScript.</p>
+
+<p>function myFunction(){<br/>
+   documeny.getElementById("demo1").innerHTML = "Hello Dolly";<br/>
+   document.getElementById("demo2").innerHTML = "How are you?"<br/>
+}
+</p>
+
+<h3>Keywords = reserved words</h3>
+<ul>
+    <li>var=> declares a variable</li>
+    <li>let=> declares a block of variable</li>
+    <li>const=> declares a block constant</li>
+    <li>if=> Marks a block of statements to be executed with a condition</li>
+    <li>switch=> marks a block of statements to be executed in different cases</li>
+    <li>for=> marks a block of statements to be executed in a loop</li>
+    <li>function=> declares a function</li>
+    <li>return=> exits a function</li>
+    <li>try=> implement erros handling to a block of statements</li>
+</ul>
+
+
 
 
     </div>

@@ -1,79 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>JS Variables </title>
-</head>
-<body>
-    <h1>JS Variables </h1>
-    <p>Well, now is now! Everything until  now was simple and easy to learn, I think from now I actually start to learn JS 🙂 </p>
+    <title>JS Variables</title>
+  </head>
+  <body>
+    <h1>JS Variables</h1>
+    <p>
+      Well, now is now! Everything until now was simple and easy to learn, I
+      think from now I will actually start to learn JS 🙂!
+    </p>
     <h2>Variables => are containers for Storing Data</h2>
     <h3>
-        Is is good practice to declare variable before using them. JS Variables can be declared in 4 ways:
+      Is is good practice to declare variable before using them. JS Variables
+      can be declared in 4 ways:
     </h3>
     <ul>
-        <li>Automatically </li>
-        <li>Using <b>var</b></li>
-        <li>Using <b>let</b></li>
-        <li>Using <b>const</b></li>
+      <li>Automatically</li>
+      <li>Using <b>var</b></li>
+      <li>Using <b>let</b></li>
+      <li>Using <b>const</b></li>
     </ul>
     <p>See examples bellow:</p>
     <ul>
-        <li> x = 5; </li>
-        <li> y = 6; </li>
-        <li> z = x + y; </li>
+      <li>x = 5;</li>
+      <li>y = 6;</li>
+      <li>z = x + y;</li>
     </ul>
-    <p>In this example, x, y aand z are undeclared, they are automatically declared when will be first used.</p>
+    <p>
+      In this example, x, y aand z are undeclared, they are automatically
+      declared when will be first used.
+    </p>
+    <hr/>
 
     <h3>!!!Did you know?🤔</h3>
     <ul>
-        <li><b>var</b> keyword has been used in all JS from 1995 to 2015.</li>
-        <li><b>let</b> and <b>const</b> were added to JS in 2015.</li>
-        <li><b>var</b> keyword should now be used in code written for older browser.</li>
+      <li><b>var</b> keyword has been used in all JS from 1995 to 2015.</li>
+      <li><b>let</b> and <b>const</b> were added to JS in 2015.</li>
+      <li>
+        <b>var</b> keyword should now be used in code written for older browser.
+      </li>
     </ul>
+    <hr/>
     <h3>When to use var, let, or const ?</h3>
     <p>1.Always declares variables</p>
-    <p>2.Always use <span class="red">const</span> if the value should not be changed</p>
-    <p>3.Always should use <span class="red">const </span> if the type should not be changed (Arrays and Objects)</p>
-    <p>4.Only use <span class="red">let</span> if you can t use <span class="red"> const</span></p>
-    <p>5.Only use <span class="red">var</span> if you must support old browsers</p>
-    <hr/>
+    <p>
+      2.Always use <span class="red">const</span> if the value should not be
+      changed
+    </p>
+    <p>
+      3.Always should use <span class="red">const </span> if the type should not
+      be changed (Arrays and Objects)
+    </p>
+    <p>
+      4.Only use <span class="red">let</span> if you can t use
+      <span class="red"> const</span>
+    </p>
+    <p>
+      5.Only use <span class="red">var</span> if you must support old browsers
+    </p>
+    <hr />
 
     <h2>JS Identifiers</h2>
-    <p>All JS variables must be identified with <span class="red">UNIQUE NAMES</span></p>
+    <p>
+      All JS variables must be identified with
+      <span class="red">UNIQUE NAMES</span>
+    </p>
     <p>The unique names are called identifiers.</p>
-    <p>Identifiers can be short names (like x, y) or be more descriptive, like age, sum, totalVolume.<br/>
-    The general rules for constructing names are:</p>
+    <p>
+      Identifiers can be short names (like x, y) or be more descriptive, like
+      age, sum, totalVolume.<br />
+      The general rules for constructing names are:
+    </p>
     <ul>
-        <li>1.Names can containers letters, digits, underscores, and dollar sign</li>
-        <li>2.Names must begin with a letter</li>
-        <li>3.Names can also begin with $ and _</li>
-        <li>4.Names are case sensitive</li>
-        <li>5.Reserved words cannot be used as names</li>
+      <li>
+        1.Names can containers letters, digits, underscores, and dollar sign
+      </li>
+      <li>2.Names must begin with a letter</li>
+      <li>3.Names can also begin with $ and _</li>
+      <li>4.Names are case sensitive</li>
+      <li>5.Reserved words cannot be used as names</li>
     </ul>
+    <hr />
+
+    <h2>The Assignment Operator</h2>
+    <p>
+      In JS the equal sign <span class="red">(=)</span> is an assignemnt
+      operator,is not equal sign.<br />If equal sign is needed, then you can use
+      <span class="red"> = = = </span>.
+    </p>
+    <hr />
+
+    <h2>JS Data Script Types</h2>
+    <p>
+      JS variables can hold numbers like 100 and text values line "John Doe".<br />
+      In programming, text values are called text string.<br />
+      JS can handle many types of data, but for now, we will learn about numbers
+      and strings.
+    </p>
+    <p id="demo"></p>
+    <script>
+      const pi = 3.14;
+      let person = "John Doe";
+      let answer = "Yes I am";
+
+      document.getElementById("demo").innerHTML =
+        pi + "<br/>" + person + "<br/>" + answer;
+    </script>
+    <hr/>
+    <h2>Declaring a JS Variable</h2>
+    <p>
+      Creating a variable in JS , is called declaring a variable.You can use
+      <span class="red">var </span> or <span class="red"> let.</span>
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      <span class="red">var</span> carName;<br />
+      or<br />
+      <span class="red">let</span> carName;<br />
+    </p>
+    <p>
+      After the declaration (creation) the variable still has no value(is called
+      undefined).<br />To <b>assing</b> a value to the variable, use the equal
+      sign:<br />
+      carName = <span class="red">"Volvo";</span><br />
+      You can also assing a value to the variable when you declare it:<br />
+      let carName = <span class="red">"Volvo";</span>
+    </p>
+
+    <h3>This is an example of changing the value of a variable:</h3>
+    <p class="example">Example:</p>
+
+    <p id="demoThree"></p>
+    <script>
+      //on this example, is visible just the value, which is in our case "Volvo";
+      let carName = "Volvo";
+      document.getElementById("demoThree").innerHTML = carName;
+    </script>
+    <p>
+      Finally, I have understood what is this value, and why always we are
+      looking for values inside of things when we want to get a result etc.
+    </p>
     <hr/>
 
-    <h2>The Assignment Operator </h2>
-    <p>In JS the equal sign <span class="red">(=)</span> is an assignemnt operator,is not equal sign.<br/>If equal sign is needed, then you can use <span class="red"> = = = </span>.</p>
-     <hr/>
+    <h2>One statement (instruction), many variables!</h2>
+    <p>
+      You can use on statement to declare more than one variable, as long as you
+      use comma in between the variables.However, the declaration(creation) can
+      span(take) multiple lines.See examples bellow:
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      let person = <span class="red">"John Doe"</span>,carName =
+      <span class="red">"Volvo"</span>, price = <span class="red">200</span>;
+    </p>
+    <p>
+      let person = <span class="red">"John Doe"</span>,<br />
+      carName = <span class="red">"Volvo"</span>,<br />
+      price = <span class="red">200</span>;<br />
+    </p>
+    <hr/>
 
-     <h2>JS Data Script Types</h2>
-     <p>JS variables can hold numebrs like 100 and text values line "Jogn Doe".<br/>
-    In programming, text values are called text string.<br/>
-JS can handle many types of data, but for now, we will learn about numbers and strings.</p>
-<p id="demo"> </p>
+    <h2>Value = undefined</h2>
+    <p>Really, I have to understand this, once understood, it will be much easier when I will work later with functions.</p>
+    <p>So, in computer programs, variables are often declared without a value.The value can be something that has to be calculated, or something that will be provided later like user input.<br/>
+    A variable declared without a value, will have the value <span class="red"> undefined</span>.<br/>
+The variable carName will have the value <span class="red"> undefined</span> after the execution of this statement:
+</p>
+<p class="example">Example:</p>
+<p>A variable without a value has the value of:</p>
+<p id="demoFour"></p>
 <script>
-    const pi = 3.14;
-    let person = "John Doe";
-    let answer = "Yes I am";
-
-    document.getElementById("demo").innerHTML = pi + "<br/>" + person + "<br/>" + answer;
+let carsName;
+document.getElementById("demoFour").innerHTML = carsName;
+//we will get an "undefined" result, because we have not assinged a value to carsName;
 </script>
-<h2>Declaring a JS Variable</h2>r/>
-<p>Creating a variable in JS , is called declaring a variable.</p>
+<hr/>
 
-<
-</body>
+<h2>Re-Declaring JS Variables</h2>
+<p>When declaring a JS value using <span class="red"> var</span>, the value will be kept and after execution.<br/>
+The variable <span class="red"> carNames</span> will still have the value "Volvo" after the execution of following statements:<br/></p>
+<p id="demoSix"></p>
+
+<script>
+var carNames = "Volvo";
+var carNames;
+document.getElementById("demoSix").innerHTML = carName;
+</script>
+
+  </body>
 </html>

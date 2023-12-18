@@ -33,7 +33,7 @@
       In this example, x, y aand z are undeclared, they are automatically
       declared when will be first used.
     </p>
-    <hr/>
+    <hr />
 
     <h3>!!!Did you know?🤔</h3>
     <ul>
@@ -43,7 +43,7 @@
         <b>var</b> keyword should now be used in code written for older browser.
       </li>
     </ul>
-    <hr/>
+    <hr />
     <h3>When to use var, let, or const ?</h3>
     <p>1.Always declares variables</p>
     <p>
@@ -109,7 +109,7 @@
       document.getElementById("demo").innerHTML =
         pi + "<br/>" + person + "<br/>" + answer;
     </script>
-    <hr/>
+    <hr />
     <h2>Declaring a JS Variable</h2>
     <p>
       Creating a variable in JS , is called declaring a variable.You can use
@@ -143,7 +143,7 @@
       Finally, I have understood what is this value, and why always we are
       looking for values inside of things when we want to get a result etc.
     </p>
-    <hr/>
+    <hr />
 
     <h2>One statement (instruction), many variables!</h2>
     <p>
@@ -161,34 +161,99 @@
       carName = <span class="red">"Volvo"</span>,<br />
       price = <span class="red">200</span>;<br />
     </p>
-    <hr/>
+    <hr />
 
     <h2>Value = undefined</h2>
-    <p>Really, I have to understand this, once understood, it will be much easier when I will work later with functions.</p>
-    <p>So, in computer programs, variables are often declared without a value.The value can be something that has to be calculated, or something that will be provided later like user input.<br/>
-    A variable declared without a value, will have the value <span class="red"> undefined</span>.<br/>
-The variable carName will have the value <span class="red"> undefined</span> after the execution of this statement:
+    <p>
+      Really, I have to understand this, once understood, it will be much easier
+      when I will work later with functions.
+    </p>
+    <p>
+      So, in computer programs, variables are often declared without a value.The
+      value can be something that has to be calculated, or something that will
+      be provided later like user input.<br />
+      A variable declared without a value, will have the value
+      <span class="red"> undefined</span>.<br />
+      The variable carName will have the value
+      <span class="red"> undefined</span> after the execution of this statement:
+    </p>
+    <p class="example">Example:</p>
+    <p>A variable without a value has the value of:</p>
+    <p id="demoFour"></p>
+    <script>
+      let carsName;
+      document.getElementById("demoFour").innerHTML = carsName;
+      //we will get an "undefined" result, because we have not assinged a value to carsName;
+    </script>
+    <hr />
+
+    <h2>Re-Declaring JS Variables</h2>
+    <p>
+      When declaring a JS value using <span class="red"> var</span>, the value
+      will be kept and after execution.<br />
+      You cannot re- declared an already declared variable using
+      <span class="red"> let </span> or <span class="red">const</span>.<br />
+      The variable <span class="red"> carNames</span> will still have the value
+      "Volvo" after the execution of following statements:<br />
+    </p>
+    <p id="demoSix"></p>
+
+    <script>
+      var carNames = "Volvo";
+      var carNames;
+      document.getElementById("demoSix").innerHTML = carName;
+    </script>
+    <hr />
+
+    <h2>JS Arithmetic</h2>
+    <p>
+      Exactly like in Math, you can do arithmetic using JS variables:<br />
+      let x = 5 + 3 +2 ;
+      <!-- x = 10 -->
+    </p>
+    <p class="example">Example:</p>
+    <p>The result of adding 5 + 2 + 3 is:</p>
+    <p id="demo7"></p>
+    <script>
+      let x = 5 + 2 + 3;
+      document.getElementById("demo7").innerHTML = x;
+    </script>
+    <hr />
+    <h2>JS Dollar sign $</h2>
+    <p>
+      Since JavaScript treats a dollar sign as a letter, identifiers containing
+      $ are valid variable names:
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      let $ = "Hello World";<br />
+      let $$$ = 2;<br />
+      let $myMoney = 5;
+    </p>
+     <p id="demo8"></p>
+
+<script>
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("demo8").innerHTML = $$$ + $myMoney;
+</script> 
+<hr/>
+<h2>JS Underscore _ </h2> 
+<p>Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names.<br/>
+ let _lastName = "Johnson";<br/>
+let _x = 2;<br/>
+let _100 = 5;
 </p>
 <p class="example">Example:</p>
-<p>A variable without a value has the value of:</p>
-<p id="demoFour"></p>
+<p id="demo9"></p>
+
 <script>
-let carsName;
-document.getElementById("demoFour").innerHTML = carsName;
-//we will get an "undefined" result, because we have not assinged a value to carsName;
+let _x = 2;
+let _100 = 5;
+
+document.getElementById("demo9").innerHTML = _x + _100;
 </script>
 <hr/>
-
-<h2>Re-Declaring JS Variables</h2>
-<p>When declaring a JS value using <span class="red"> var</span>, the value will be kept and after execution.<br/>
-The variable <span class="red"> carNames</span> will still have the value "Volvo" after the execution of following statements:<br/></p>
-<p id="demoSix"></p>
-
-<script>
-var carNames = "Volvo";
-var carNames;
-document.getElementById("demoSix").innerHTML = carName;
-</script>
 
   </body>
 </html>

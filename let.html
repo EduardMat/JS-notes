@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>JS let </title>
-</head>
-<body>
-    
-</body>
+    <title>JS let</title>
+  </head>
+  <body>
+    <h1>JS let</h1>
+    <p>
+      The let keyword was introduced in ES6 (2015).<br />
+      Variables declared with let have Block Scope.<br />
+      Variables declared with let must be Declared before use.<br />
+      Variables declared with let cannot be Redeclared in the same scope.
+    </p>
+    <h2>Block scope:</h2>
+    <p>
+      Before ES6 (2015), JavaScript did not have Block Scope.<br />
+      JavaScript had Global Scope and Function Scope.<br />
+      ES6 introduced the two new JavaScript keywords: let and const.<br />
+      These two keywords provideed Block Scope in JavaScript:
+    </p>
+    <p class="red">Example:</p>
+    <p>
+      {<br />
+      let x = 2;<br />
+      }<br />
+      // x can NOT be used here as is used already inside the block (inside the
+      function) <br />
+    </p>
+    <hr />
+    <h2>Global scope</h2>
+    <p>
+      Wow!I did not know this! => Variables declared with the var always have
+      Global Scope.<br />
+      Variables declared with the var keyword can NOT have block scope:
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      {<br />
+      var x = 2;<br />
+      }<br />
+      // x CAN be used here <br />
+      Variables declared with <span class="red"> var </span>inside a { } block
+      can be accessed from outside the block.
+    </p>
+    <hr />
+    <h2>Cannot be Redeclared</h2>
+    <p>
+      Variable defined with <span class="red">let </span> cannot be
+      redeclared.<br />
+      You can not accidentally redeclare a variable declared with
+      <span> let </span>.<br />
+      With <span class="red"> let </span> you cannot do this: let x = "John
+      Doe";<br />
+      let x = 0; <br />
+      <br />
+      Variables defined with <span class="red"> var </span> <b>can </b> be
+      redeclared.With <span class="red"> var</span> you can do this:<br />
+      var x = "John Doe";<br />
+
+      var x = 0;
+    </p>
+    <h2>Redeclaring variables</h2>
+    <p>
+      Although is possible, when using <span class="red"> var</span> to re
+      declare variables, can impose issues.Redeclaring a variable inside a block
+      will also redeclare the variable outside the block:<br />
+      var x = 10;<br />
+      // Here x is 10<br />
+
+      { <br />
+      var x = 2;<br />
+      // Here x is 2<br />
+      }<br />
+
+      // Here x is 2<br />
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      var x = 10;
+      // Here x is 10
+
+      {
+        var x = 2;
+        // Here x is 2
+      }
+
+      // Here x is 2
+      document.getElementById("demo").innerHTML = x;
+    </script>
+    <p>
+      So, when using <span> let </span> can solve this issue.As declaring a
+      variable inside a block will not declare the variable outsode the
+      block:<br />
+      let x = 10;<br />
+      // Here x is 10<br />
+
+      {<br />
+      let x = 2;<br />
+      // Here x is 2<br />
+      }<br />
+
+      // Here x is 10<br />
+      Redeclaring a variable using <span class="red"> let </span> in other block (in other function) is allowed.
+    </p>
+  </body>
 </html>

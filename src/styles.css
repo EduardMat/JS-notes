@@ -83,3 +83,8 @@ hr{
     max-width: 70px;
     padding:15px;
 }
+
+.red{
+    color:red;
+    font-weight: bolder;
+}

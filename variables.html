@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>JS Variables </title>
+</head>
+<body>
+    <h1>JS Variables </h1>
+    <p>Well, now is now! Everything until  now was simple and easy to learn, I think from now I actually start to learn JS 🙂 </p>
+    <h2>Variables => are containers for Storing Data</h2>
+    <h3>
+        Is is good practice to declare variable before using them. JS Variables can be declared in 4 ways:
+    </h3>
+    <ul>
+        <li>Automatically </li>
+        <li>Using <b>var</b></li>
+        <li>Using <b>let</b></li>
+        <li>Using <b>const</b></li>
+    </ul>
+    <p>See examples bellow:</p>
+    <ul>
+        <li> x = 5; </li>
+        <li> y = 6; </li>
+        <li> z = x + y; </li>
+    </ul>
+    <p>In this example, x, y aand z are undeclared, they are automatically declared when will be first used.</p>
+
+    <h3>!!!Did you know?🤔</h3>
+    <ul>
+        <li><b>var</b> keyword has been used in all JS from 1995 to 2015.</li>
+        <li><b>let</b> and <b>const</b> were added to JS in 2015.</li>
+        <li><b>var</b> keyword should now be used in code written for older browser.</li>
+    </ul>
+    <h3>When to use var, let, or const ?</h3>
+    <p>1.Always declares variables</p>
+    <p>2.Always use <span class="red">const</span> if the value should not be changed</p>
+    <p>3.Always should use <span class="red">const </span> if the type should not be changed (Arrays and Objects)</p>
+    <p>4.Only use <span class="red">let</span> if you can t use <span class="red"> const</span></p>
+    <p>5.Only use <span class="red">var</span> if you must support old browsers</p>
+    <hr/>
+
+    <h2>JS Identifiers</h2>
+    <p>All JS variables must be identified with <span class="red">UNIQUE NAMES</span></p>
+    <p>The unique names are called identifiers.</p>
+    <p>Identifiers can be short names (like x, y) or be more descriptive, like age, sum, totalVolume.<br/>
+    The general rules for constructing names are:</p>
+    <ul>
+        <li>1.Names can containers letters, digits, underscores, and dollar sign</li>
+        <li>2.Names must begin with a letter</li>
+        <li>3.Names can also begin with $ and _</li>
+        <li>4.Names are case sensitive</li>
+        <li>5.Reserved words cannot be used as names</li>
+    </ul>
+    <hr/>
+
+    <h2>The Assignment Operator </h2>
+    <p>In JS the equal sign <span class="red">(=)</span> is an assignemnt operator,is not equal sign.<br/>If equal sign is needed, then you can use <span class="red"> = = = </span>.</p>
+     <hr/>
+
+     <h2>JS Data Script Types</h2>
+     <p>JS variables can hold numebrs like 100 and text values line "Jogn Doe".<br/>
+    In programming, text values are called text string.<br/>
+JS can handle many types of data, but for now, we will learn about numbers and strings.</p>
+<p id="demo"> </p>
+<script>
+    const pi = 3.14;
+    let person = "John Doe";
+    let answer = "Yes I am";
+
+    document.getElementById("demo").innerHTML = pi + "<br/>" + person + "<br/>" + answer;
+</script>
+<h2>Declaring a JS Variable</h2>r/>
+<p>Creating a variable in JS , is called declaring a variable.</p>
+
+<
+</body>
+</html>

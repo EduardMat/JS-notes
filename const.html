@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>JS Const</title>
+  </head>
+  <body>
+    <h1>JS Const</h1>
+    <p>
+      The const keyword was introduced in ES6 (2015).<br />
+      Variables defined with const cannot be Redeclared.<br />
+      Variables defined with const cannot be Reassigned.<br />
+      Variables defined with const have Block Scope.
+    </p>
+    <p>
+      See bellow example of assignment for const:<br />
+      const PI = 3.14159265359; =>this is correct!<br />
+      <br />
+      const PI;<br />
+      PI = 3.14159265359; =>this is incorrect!<br />
+    </p>
+    <hr />
+    <h3>
+      When to use const? Const is to be used when the variable is not changed,
+      like arrays, objects, functions.
+    </h3>
+    <h2>Constant Object and Arrays</h2>
+    <p>
+      The keyword const is a little misleading.<br />
+
+      It does not define a constant value. It defines a constant reference to a
+      value.<br />
+
+      Because of this you can NOT: <br />
+    </p>
+    <ul>
+      <li>Reasign a constant value</li>
+      <li>Reassign a constant array</li>
+      <li>Reassign a constant object</li>
+    </ul>
+    <p>But you can:</p>
+    <ul>
+      <li>Change the elements of constant array</li>
+      <li>Change the properties of constant objects</li>
+    </ul>
+    <hr />
+    <h2>Constant Arrays</h2>
+    <p>You can change the elements of a constant array:<br /></p>
+    <p class="example">Example:</p>
+    <p>
+      // You can create a constant array:<br />
+      const cars = ["Saab", "Volvo", "BMW"];<br />
+      <br />
+      // You can change an element:<br />
+      cars[0] = "Toyota";<br />
+      <br />
+      // You can add an element:<br />
+      cars.push("Audi");<br />
+    </p>
+
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      // Create an Array:
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // Change an element:
+      cars[0] = "Toyota";
+
+      // Add an element:
+      cars.push("Audi");
+
+      // Display the Array:
+      document.getElementById("demo").innerHTML = cars;
+    </script>
+    <p>
+      const cars = ["Saab", "Volvo", "BMW"];<br />
+      cars = ["Toyota", "Volvo", "Audi"]; // ERROR
+    </p>
+    <hr />
+
+    <h2>Constant Objects</h2>
+    <p>You can chnage the properties of a constant objects:</p>
+    <p class="example">Example:</p>
+    <p>
+      // You can create a const object:<br />
+      const car = {type:"Fiat", model:"500", color:"white"};<br />
+      <br />
+      // You can change a property:<br />
+      car.color = "red";<br />
+      <br />
+      // You can add a property:<br />
+      car.owner = "Johnson";<br />
+    </p>
+    <p>
+      Declaring a constant object does NOT make the objects properties
+      unchangeable:
+    </p>
+
+    <p id="demo"></p>
+    <p>
+      // Create an object:<br />
+      const car = {type:"Fiat", model:"500", color:"white"};<br />
+      <br />
+      // Change a property:<br />
+      car.color = "red";<br />
+      <br />
+      // Add a property:<br />
+      car.owner = "Johnson";<br />
+      <br />
+      // Display the property:<br />
+      document.getElementById("demo").innerHTML = "Car owner is " + car.owner;
+      <br />
+    </p>
+
+    <p id="demo2"></p>
+
+    <script>
+      // Create an object:
+      const car = { type: "Fiat", model: "500", color: "white" };
+
+      // Change a property:
+      car.color = "red";
+
+      // Add a property:
+      car.owner = "Johnson";
+
+      // Display the property:
+      document.getElementById("demo2").innerHTML = "Car owner is " + car.owner;
+    </script>
+    <p>
+      But you can NOT reassign the object:
+      <br />
+      <br />
+      const car = {type:"Fiat", model:"500", color:"white"};<br />
+
+      car = {type:"Volvo", model:"EX60", color:"red"};
+      <span class="red"> // ERROR </span>
+    </p>
+    <hr />
+    <h2>Block Scope</h2>
+    <p>
+      Declaring a variable with const is similar to let when it comes to Block
+      Scope.<br />
+      The x declared in the block, in this example, is not the same as the x
+      declared outside the block:<br />
+      const x = 10;<br />
+      // Here x is 10<br />
+
+      {<br />
+      const x = 2;<br />
+      // Here x is 2<br />
+      }<br />
+
+      // Here x is 10<br />
+    </p>
+    <hr />
+    <h2>Block scope</h2>
+    <p>
+      Declaring a variable with const is similar to let when it comes to Block
+      Scope.<br />
+      The x declared in the block, in this example, is not the same as the x
+      declared outside the block:
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      const x = 10;<br />
+      // Here x is 10<br />
+
+      {<br />
+      const x = 2;<br />
+      // Here x is 2<br />
+      }<br />
+
+      // Here x is 10<br />
+    </p>
+    <h2>Redeclaring</h2>
+    <p>
+      Redeclaring a JavaScript var variable is allowed anywhere in a program:<br />
+      var x = 2; // Allowed<br />
+      var x = 3; // Allowed<br />
+      x = 4; // Allowed<br />
+    </p>
+    <p>
+      Redeclaring an existing var or let variable to const, in the same scope,
+      is not allowed:<br />
+      var x = 2; // Allowed<br />
+      const x = 2; // Not allowed<br />
+
+      {<br />
+      let x = 2; // Allowed<br />
+      const x = 2; // Not allowed<br />
+      }<br />
+
+      {<br />
+      const x = 2; // Allowed<br />
+      const x = 2; // Not allowed<br />
+      }<br />
+    </p>
+    <p>
+      Reassigning an existing const variable, in the same scope, is not allowed:
+      const x = 2; // Allowed<br />
+      x = 2; // Not allowed<br />
+      var x = 2; // Not allowed<br />
+      let x = 2; // Not allowed<br />
+      const x = 2; // Not allowed<br />
+
+      {<br />
+      const x = 2; // Allowed<br />
+      x = 2; // Not allowed<br />
+      var x = 2; // Not allowed<br />
+      let x = 2; // Not allowed<br />
+      const x = 2; // Not allowed<br />
+      }<br />
+    </p>
+    <p>
+      Redeclaring a variable with const, in another scope, or in another block,
+      is allowed:<br />
+      const x = 2; // Allowed<br />
+
+      {<br />
+      const x = 3; // Allowed<br />
+      }<br />
+
+      {<br />
+      const x = 4; // Allowed<br />
+      }<br />
+    </p>
+  </body>
+</html>

@@ -21,9 +21,78 @@
    <hr/>
 
    <h2>Comparisation operators:</h2>
-   <ul>
-    <li></li><span class="red"></span>></li>
-   </ul>
+   <ul class="notDot">
     
+    <li></li>1. <span class="red"> = = </span> equal to </li>
+    <li></li>2. <span class="red">= =  =</span> equal value and equal type</li>
+    <li></li>3. <span class="red">! = </span> not equal </li>
+    <li></li>4. <span class="red">! = = </span> not equal value or not equal type</li>
+    <li></li>5. <span class="red"> > </span> greated than </li>
+    <li></li>6. <span class="red"> ( < )</span> less than </li>
+    <li></li>7. <span class="red"> >= </span> greater than or equal to</li>
+    <li></li>8. <span class="red"><= </span>less than or equal to </li>
+    <li></li>9. <span class="red"> ? </span> ternary operator </li>
+    
+   </ul>
+    <hr/>
+    <h2>
+        JS string addition
+    </h2>
+    <p> The <span> + </span> can be used to add (concatenate) strings:
+    let text1 = "John"; <br/>
+let text2 = "Doe";      <br/>
+let text3 = text1 + " " + text2;<br/>
+ Results : "John Doe"
+    
+    </p>
+    <p>
+       let text1 = "What a very ";<br/>
+text1 + = "nice day";<br/>
+The result of text1 will be:<br/>
+
+What a very nice day<br/>
+    </p>
+    <p class="example">Example:</p>
+    <p>The assignment operator += can concatenate strings.</p>
+
+<p id="demo1"></p>
+
+<script>
+let text1 = "What a very ";
+text1 += "nice day";
+document.getElementById("demo1").innerHTML = text1;
+</script>
+<hr/>
+<h2>Adding Strings and Numbers</h2>
+<p>If you are adding numbers to a string, the results will be a string.</p>
+<p class="example">Example:</p>
+<p>
+let x = 5 +  5 <br/>
+let y = "5" + 5;<br/>
+let z = "Hello" + 5;<br/>
+The result of x, y, and z will be:<br/>
+
+10<br/>
+55<br/>
+Hello5<br/>
+</p>
+<hr/>
+<h2>Logical Operators </h2>
+<p>
+ 1.   &&	logical and <br/>
+ 2.   ||	logical or   <br/>
+ 3.   !	logical not     <br/>
+</p>
+<hr/>
+<h2>JS Type Operators</h2>
+
+<p>
+<b>Operator	Description</b><br/>
+1.typeof	  =>Returns the type of a variable<br/>
+2. instanceof =>Returns true if an object is an instance of an object type
+
+</p>
+
+
 </body>
 </html>

@@ -88,3 +88,7 @@ hr{
     color:red;
     font-weight: bolder;
 }
+
+.notDot{
+    list-style: none;
+}

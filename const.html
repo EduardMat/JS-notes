@@ -142,23 +142,7 @@
       <span class="red"> // ERROR </span>
     </p>
     <hr />
-    <h2>Block Scope</h2>
-    <p>
-      Declaring a variable with const is similar to let when it comes to Block
-      Scope.<br />
-      The x declared in the block, in this example, is not the same as the x
-      declared outside the block:<br />
-      const x = 10;<br />
-      // Here x is 10<br />
-
-      {<br />
-      const x = 2;<br />
-      // Here x is 2<br />
-      }<br />
-
-      // Here x is 10<br />
-    </p>
-    <hr />
+   
     <h2>Block scope</h2>
     <p>
       Declaring a variable with const is similar to let when it comes to Block
@@ -178,6 +162,7 @@
 
       // Here x is 10<br />
     </p>
+    <hr/>
     <h2>Redeclaring</h2>
     <p>
       Redeclaring a JavaScript var variable is allowed anywhere in a program:<br />
@@ -229,6 +214,25 @@
       {<br />
       const x = 4; // Allowed<br />
       }<br />
+    </p>
+    <hr />
+    <h2>Hoisting</h2>
+    <p>
+      Variables defined with <span class="red"> var </span>are hoisted and can
+      be initialized at any time.This means that they can be placed after a
+      block (function) as they will be then replaced and re used as
+      needed.However when using <b>let </b> and <b>const </b> they need always
+      to be declared first and then used.
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      carName = "Volvo";<br />
+      var carName; =>This is ok.
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      alert (carName);<br />
+      const carName = "Volvo"; =>Thi is not ok.
     </p>
   </body>
 </html>

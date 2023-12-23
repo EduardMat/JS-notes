@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
-</head>
-<body>
+    <title>JS Functions</title>
+  </head>
+  <body>
+    <h1>JS Functions</h1>
+    <h2>
+      A JS function is a block of code designed to perform a particular task.<br />
+      A function is executed when is invoked.
+    </h2>
+    <p>Example:</p>
+    <p>Call a function which performs a calculation and returns the result:</p>
+
+    <p>
+      script <br />
+      function myFunction(p1, p2) {<br />
+      return p1 * p2;<br />
+      }<br />
+
+      let result = myFunction(4, 3);<br />
+      document.getElementById("demo").innerHTML = result;<br />
+      script<br />
+    </p>
+
+    <p id="demo1"></p>
+
+    <script>
+      function myFunction(p1, p2) {
+        return p1 * p2;
+      }
+
+      let result = myFunction(4, 3);
+      document.getElementById("demo1").innerHTML = result;
+    </script>
+    <hr />
+    <h2>JS Function Syntax</h2>
+    <p>
+      A JS function is defined with the
+      <span class="red"> function</span> keyword, followed by a <b>name</b>,
+      followed by parentesis <b>()</b> .<br />
+      Function names can contain letters, digits, underscore, and dollar signs
+      (same rules as variables).<br />
+      The parenthesis may include parameters names separated by commas:<b
+        >(parameter1, parameter2)</b
+      >.<br />
+      The code to be executed, by the function, is placed inside curly
+      brackets.<br />
+    </p>
+    <p class="example">Example:</p>
+    <p>
+      function name(parameter1, parameter2, parameter3) {<br />
+      // code to be executed }
+    </p>
+    <p>
+      Function <b>parameters</b> are listed inside the paranthesis <b>()</b> in
+      the function definition. <br />
+      Function <b>arguments </b> are values received by the function when it is
+      invoked.<br />
+      Inside the function, the arguments (the parameters) behave as local
+      variables.
+    </p>
+    <hr />
+    <h2>Function Invokation</h2>
+    <p>
+      The code inside the function will execute when "something"
+      <b>invokes</b> the function:
+    </p>
+    <ul>
+      <li>When an event occurs (when a user clicks o button)</li>
+      <li>When it is invoked (called) from JS code</li>
+      <li>Automatically(self- invoked)</li>
+    </ul>
+    <hr />
+    <h2>Function return</h2>
+    <p>
+      When JS function rechaes a <span class="red"> return</span>, the function
+      will stop executing.<br/>
+      If the function was invoked from the statement, JS will "return" to execute the code after the invoked statement.<br/>
+ Functions often compute a <b> return value</b>.The return value is "returned" back to the "caller".
+    </p>
+    <p class="example">Example:</p>
+    <p><p>Call a function which performs a calculation and returns the result:</p>
+
+<p>
     
-</body>
+
+script <br/>
+let x = myFunction(4, 3);<br/>
+document.getElementById("demo").innerHTML = x;<br/>
+
+function myFunction(a, b) {<br/>
+  return a * b;<br/>
+}<br/>
+script<br/>
+
+</p>
+<p id="demo2"></p>
+<script>
+let x = myFunction(4, 6);
+document.getElementById("demo2").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+</p>
+<h3>Why functions?</h3>
+<p>With functions you can reuse code<br/>
+    You can write code that can be used many times <br/>
+    You can use the same code with different arguments, to produce differner results.
+</p>
+<hr/>
+<h2>The <b>()</b> Operator </h2>
+<p>The <b>()</b> operator (calls) the function:</p>
+<p class="example">Example:</p>
+<p>
+    Convert Fahrenheit to Celsius:<br/>
+    <br/>
+
+function toCelsius(fahrenheit) {<br/>
+  return (5/9) * (fahrenheit-32);<br/>
+}<br/>
+
+let value = toCelsius(77);<br/>
+</p>
+<p id="demo3"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(77);
+document.getElementById("demo3").innerHTML = value;
+</script>
+<br/>
+<br/>
+<p>Accessing a function () returns the function and not the function results:</p>
+<p class="example">Example:</p>
+<p>
+    function toCelsius(fahrenheit) { <br>
+  return (5/9) * (fahrenheit-32);<br/>
+    }<br/>
+
+let value = toCelsius;<br/>
+</p>
+<p id="demo4"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let values = toCelsius;
+document.getElementById("demo4").innerHTML = values;
+</script>
+
+  </body>
 </html>

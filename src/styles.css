@@ -92,3 +92,24 @@ hr{
 .notDot{
     list-style: none;
 }
+
+table {
+        border: 1px solid lightslategray;
+        background-color: #ededed;
+      }
+
+      td {
+        border-top: 1px solid grey;
+        border-right: 1px solid grey;
+      }
+      thead {
+        background-color: #ededed;
+      }
+
+      p {
+        color: purple;
+      }
+      .table-container {
+        overflow-x: auto;
+      }
+    -->

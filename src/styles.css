@@ -112,4 +112,7 @@ table {
       .table-container {
         overflow-x: auto;
       }
-    -->
+  
+      .note{
+        background-color: rgb(238, 238, 145);
+      }

@@ -158,6 +158,55 @@ function toCelsius(f) {
 let values = toCelsius;
 document.getElementById("demo4").innerHTML = values;
 </script>
+<p class="note">As can be seen, <span class="red"> to Celsius</span> 
+  refers to the function object, and <span class="red"> toCelsius()</span> refers to the 
+  function results.</p>
+  <hr/>
+  <h2>Functions Used as Variables Values</h2>
+  <p>Functions can be used the same way as you use variables, in all types of formulas, assignments and calculations.</p>
+  <p class="example">Example:</p>
+  <p>Instead os using a variable to store the return value of a function:<br/>
+  let x = toCelsius(77);<br/>
+let text = "The temperature is " + x + " Celsius";<br/></p>
+<p>You can use the function directly as a variable:<br/>
+  let text = "The temperature is " + toCelsius(77) + " Celsius";
+  <p id="demo"></p>
+
+script><br/>
+let text = "The temperature is " + toCelsius(77) + " Celsius.";<br/>
+document.getElementById("demo").innerHTML = text;<br/>
+
+function toCelsius(fahrenheit) {<br/>
+  return (5/9) * (fahrenheit-32);<br/>
+} <br/>
+script><br/>
+
+</p>
+<p id="demo5"></p>
+
+<script>
+let text = "The temperature is " + toCelsius(77) + " Celsius.";
+document.getElementById("demo5").innerHTML = text;
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+<hr/>
+<h2>Local Variables</h2>
+<p>Variables declared within a JS function, become<b>LOCAL </b>to the function.<br/>
+Local variables can only be accessed from the function. </p>
+<p class="example">Example:</p>
+// code here can NOT use carName
+
+function myFunction() {<br/>
+  let carName = "Volvo";<br/>
+  // code here CAN use carName<br/>
+}<br/>
+
+// code here can NOT use carName<br/>
+<p>Since local variables are only recongnized inside their functions, variables with the same name can be used in different functions.<br/>
+Local variables are created when a functions starts, and delete when the function is completed.</p>
 
   </body>
 </html>

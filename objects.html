@@ -20,7 +20,7 @@
 A duck has properties like weight and color, and methods like eat  and fly:</p>
 <div class="container text-center">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-    <div class="col"><h3>Objects</h3><br/><img src="./src/duckie.jpeg" weight="250" height="180"/></div>
+    <div class="col"><h3>Objects</h3><br/><img src="./src/duckie.jpeg" weight="200" height="150" class="img-fluid rounded shadow sm p-2 ms-5"/></div>
     <div class="col"><h3>Properties</h3><br/>
     pet.name = Duck;<br/>
 <br/>
@@ -56,5 +56,32 @@ All ducks have the same methods, but the methods are performed at different time
 The code assigns <b>many values</b> (green, fluflly ) to a variable named duck:</p>
 <p class="example">Example:</p>
 <p> const car = {model: "fluffly", weight:"3 kg", color:"green"};</p>
+<p>The values are writted as <b>name:value</b> pairs (name and value separated by a colon)</p>
+<p class="note"> It is a common practice to declare objects with the <span class= red> const </span> keyword.<br/>
+
+Learn more about using <span class="red"> const </span> with objects in the chapter: JS Const.</p>
+
+<hr/>
+<h2>Object Definition</h2>
+
+<p>You define (and create) a JS object with and object literal:</p>
+<p class="example ">Example:</p>
+<p>
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};<br/>
+// Display some data from the object:<br/>
+document.getElementById("demo6").innerHTML =<br/>
+person.firstName + " is " + person.age + " years old.";<br/>
+</p>
+
+<p id="demo6"></p>
+
+<script>
+// Create an object:
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// Display some data from the object:
+document.getElementById("demo6").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
 </body>
 </html>

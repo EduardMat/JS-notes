@@ -83,5 +83,153 @@ const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 document.getElementById("demo6").innerHTML =
 person.firstName + " is " + person.age + " years old.";
 </script>
+<hr/>
+<h2>Object Properties</h2>
+<p>The <b>name:values </b> pairs in JS objects are called <b>properties.</b>  </p>
+<div class="tablePropr">
+<table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Property Value </th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FirstName </td>
+          <td>John </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>lastName </td>
+          <td>Doe </td>
+        </tr>
+        <tr>
+          <td>age</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>eyeColor</td>
+          <td>blue </td>
+        </tr>
+      </table>
+      </div>
+
+    <hr/>
+    <h2>Accessing Object Properties</h2>
+    <pre>You can access object properties in two ways:
+
+     objectName.propertyName     |    (ex: pet.Duck)
+
+     or 
+
+    objectName["propertyName"]  |   (ex: pet["Duck"])
+ 
+  </pre>
+
+<p class="example">Example:</p>
+ 
+
+<pre>There are two different ways to access an object property.
+
+You can use person.property or person["property"].</pre>
+
+<p id="demo"></p>
+<pre>
+script>
+// Create an object:
+const persons = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+persons.firstName + " " + persons.lastName;
+/script>
+
+</pre>
+
+<p id="demo9"></p>
+
+<script>
+// Create an object:
+const persons = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display some data from the object:
+document.getElementById("demo9").innerHTML =
+persons.firstName + " " + persons.lastName;
+</script>
+<p class="note">JS objects are containers for <b>named values</b> called properties</p>
+<hr/>
+<h2>Object Methods</h2>
+<pre>
+  Objects can also have <b> methods </b>.
+  Methods are <b>actions </b> that can be performed on objects.
+  Methods are stored in properties as <b> function definition.</b>
+</pre>
+<div class="tablePropr">
+<table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Property Value </th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FirstName </td>
+          <td>John </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>lastName </td>
+          <td>Doe </td>
+        </tr>
+        <tr>
+          <td>age</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>eyeColor</td>
+          <td>blue </td>
+        </tr>
+        <tr>
+          <td>fullName  </td>
+          <td>function() {return this.firstName + " " + this.lastName;}  </td>
+        </tr>
+      </table>
+</div>
+<p class="note">A method is a function stored as a property.</p>
+<p class="example">Example:</p>
+<pre>
+  const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+</pre>
+<pre>
+  In the example above, <span class="red"> this </span> refers to the <b> person object</b>:
+  <b>this.firstName</b> means the <b>firstName</b> property of <b>person</b>
+  <b>this.lastName</b> means the <b>lastName</b> property of <b> person</b>.
+</pre>
+
+<h2>What is <b>this</b> ? </h2>
+
+
+
+
+
+
+
 </body>
 </html>

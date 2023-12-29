@@ -231,17 +231,74 @@ persons.firstName + " " + persons.lastName;
   The <span class="red"> this </span>keyword refers to different on how it is used:
 </pre>
 <div class="one">In an object method, <span class="red">this</span> refers to the object.</div>
-<div class="two">Alone,<span class="red">this </span> refers to the <b>global project</b>.</div>
+<div class="two">Alone, <span class="red">this </span> refers to the <b>global project</b>.</div>
 <div class="one">In a function, <span class="red">this</span> refers to the <b>global project</b>.</div>
 <div class="two">In a function, in strict mode, <span class="red">this </span>is indefined.</div>
 <div class="one">In an event, <span class="red">this</span> refers to the <b>element </b> that received that event.</div>
 <div class="two">Methods like <span class="red">call()</span>, <span class="red">apply()</span>and <span class="red">bind()</span> can refer <span class="red"> this </span> to <b>any object</b>. </div>
+<p class="note">
+<span class="red">this </span> is not a variable.It is a keyword.You can not change the value of <span class="red">this .</span>
+</p>
 
+<hr/>
+<h2>The <b>this </b>Keyword </h2>
+<pre>
+  In a function definition, <span class="red"> this </span> refers to the "owner"of the function.
+  in the example above, <span class="red">this </span> is the <b>person object </b> that "owns" the <span class="red">fullName</span> function.
+  In other words, <span class="red">this.firstName</span> means the <span class="red"> firstName</span> property of this object.
+</pre>
+<hr/>
+<h2>Accesing Object Methods</h2>
+<pre>You access an object method with the follwing syntax:
+  objectName.methodName()
+</pre>
+<p class="example">Example</p>
+<pre>
+name = person.fullName();
+script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
 
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+/script>
+</pre>
+<p id="demo11"></p>
 
+<script>
+// Create an object:
+const persoan = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
 
+// Display data from the object:
+document.getElementById("demo11").innerHTML = persoan.fullName();
+</script>
+<hr/>
+<h2>Do not declare Strings, Numbers, and Booleans as Objects!</h2>
+<pre>
+  When a JS variable is declared with the keyword <span class="red"> "new"</span>
+, the variable is created as an object:
+x = <span class="blue"> new </span> String();    //Declares x as a string object
+y = <span class="blue"> new </span> Number();    //Declares y as a Number object
+z = <span class="blue"> new </span> Boolean();   //Declares z as a Boolean object
 
+Avoid <span class="red">Strings, Number,</span> and <span class="red">Boolean objects</span>. 
+They complicate your code and slow down execution speed.
 
+</pre>
 
 
 </body>

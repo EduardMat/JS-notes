@@ -114,6 +114,11 @@ table {
     font-weight: bolder;
 }
 
+.blue{
+  color:blue;
+  font-weight: bolder;
+}
+
 .notDot{
     list-style: none;
 }

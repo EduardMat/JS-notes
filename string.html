@@ -10,9 +10,114 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>JS String </title>
 </head>
 <body>
-    
+  <h1>JS String </h1>
+  <pre>JS strings are for storing and manipulating text.
+    A JS string has zero or more characters writtem inside quotes.
+  </pre>
+  <p class="example">Example:</p>
+  <pre>
+ <span class="blue">let </span> text = <span class="red">"John Doe"</span>;
+ script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+/script>
+  </pre>
+  <p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+<pre>You can use single or double quotes.
+  You can use quotes inside  a string , as long as they don t match the quotes surrounding the string:
+  let carName1 = "Volvo XC60";  // Double quotes
+  let carName2 = 'Volvo XC60';  // Single quotes
+
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+</pre>
+
+<hr/>
+<h2>String Length</h2>
+<p>To find the legth of a string, use the built-in <span class="red"> length</span> property:</p>
+<p class= note>Example:</p>
+<pre>let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;</pre>
+<p class="example">Example:</p>
+<p id="demo"></p>
+<pre>
+script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+/script>
+</pre>
+<p>The length of the string is:</p>
+
+<p id="demo2"></p>
+
+<script>
+let texts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo2").innerHTML = texts.length;
+</script>
+<hr/>
+<h2>Escape Character</h2>
+<pre>
+  Because strings must be written within quotes, JS will misunderstand the string:
+  <span class="blue">let </span> text = <span>"We are so- called <b>"Vikings"</b> from the north"</span>;
+
+  The string will be chopped to "We are the so-called". 
+  The solution to avois this problem, is to use the <b>backlash escape character.</b>
+  The backlash (\) escape character turns special characters into string characters:
+</pre>
+
+
+
+
+<div class="tablePropr">
+<table>
+      <thead>
+        <tr>
+          <th>CODE  </th>
+          <th>RESULTS  </th>
+          <th>DESCRIPTION </th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> \ `  </td>
+          <td>  `   </td>
+          <td> single quote </td>
+        </tr>
+        <tr>
+          <td>\ "  </td>
+          <td> "  </td>
+          <td> double quotes </td>
+        </tr>
+        <tr>
+          <td> \\</td>
+          <td> \ </td>
+          <td> backlash  </td>
+        </tr>
+        
+      </table>
+      </div>
+      <p>1.The sequence <span> \" </span> inserts a double quote ina string:</p>
+      <span class=" blue"> let </span> text = <span class="red"> "We are the so-called \"Vikings\" from the north.";</span>==> We are the so-called "Vikings" from the north.
+      <p>2.The sequence <span class="red"> \ `</span> inserts a single quotes in a string:</p>
+       <span class=" blue"> let </span> text = <span class="red"> " It is \ ` alright";</span>==> It's alright.
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

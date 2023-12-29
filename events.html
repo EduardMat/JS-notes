@@ -11,6 +11,99 @@
     />
     <link rel="stylesheet" href="./src/styles.css" />
     <title>JS Events </title>
+    <h1>JS events</h1>
+    <h2>HTML events</h2>
+
+    <pre>HTML events are <b>things </b> that happen to HTML elements.
+    When JS is used in HTML pages, JS can <b>"react"</b> on these events.
+    An HTML event can be something the browser does, or something a user does.
+    Here are some example of HTML events:
+  </pre>
+<ul>
+  <li>1.An HTML web page has finished loading </li>
+  <li>2.An HTML input field was changed</li>
+  <li>3.An HTML button was clicked</li>
+
+</ul>
+<pre>Often, when these events happen, you may want to do something.
+JS lets you execute code when events are detected.
+HTML allows event handler attributes, with JS code, to be added to the HTML elements.
+<p class="example">Example:</p>
+ button onclick="document.getElementById('demo').innerHTML = Date()">The time is?/button >
+
+</pre>
+
+<button onclick="document.getElementById('demo12').innerHTML=Date()">The time is?</button>
+
+<p id="demo12"></p>
+<pre>
+  In the example above, the JS code changes the content of an element with the id = demo.
+
+  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =   =   =   =
+
+   In the next example, the JS code changes the content of its own element (using <span class="red">this.innerHTML</span>):
+   <p class="example">Example:</p>
+   button onclick="this.innerHTML = Date()">The time is?/button
+</pre>
+
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+<p class="note">JS code is often several lines long.It is more common to see event attributes calling functions:</p>
+<p class="example">Example:</p>
+button onclick="displayDate()">The time is?/button
+
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo13").innerHTML = Date();
+}
+</script>
+
+<p id="demo13"></p>
+<hr/>
+<h2>Common HTML Events </h2>
+<p>Here is a list of some common HTML events:</p>
+
+
+<div class="one"><span class="red">onchange </span>===> An HTML element has been changed </div>
+<div class="two"><span class="red">onclick </span>===>The user clicks an HTML element </div>
+<div class="one"><span class="red">onmouseover </span>===> The user moves the mouse over an HTML element </div>
+<div class="two"><span class="red">onmouseout </span>===>The user moves the mouse away from an HTML element   </div>
+<div class="one"><span class="red">onkeydown</span>===> The user pushes a keyboard key  </div>
+<div class="two"><span class="red">onload </span> ===>The browser has finished loading the page  </div>
+
+<hr/>
+<h2>JS Event Handlers</h2>
+<pre>
+  Event handlers can be used to handle and verify user input, user actions, and browers actions:</pre>
+  <ul>
+    <li>Things that should be done every time a page loads </li>
+    <li>Things that should be done when the page is closed </li>
+    <li>Action that should be performed when a user cliskc a button </li>
+    <li>Content that should be verified when a user inputs data </li>
+    <li>And more... </li>
+
+  </ul>
+
+Many diffent methods can be used to let JS work with the events:
+  <ul>
+    <li>HTML event attributes can execute JS code directly </li>
+    <li>HTML event attributes can call JS functions  </li>
+    <li>You can assign your own event handler functions to HTML elements  </li>
+    <li>You van prevent events from being sent or being handled  </li>
+    <li>And more... </li>
+
+  </ul>
+  <p class="note">You will learn a lot more about events and event handlers in the HTML DOM.</p>
+
+
+
+
+
+
+</head>
 </head>
 <body>
     

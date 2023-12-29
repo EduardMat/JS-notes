@@ -18,6 +18,7 @@ h2{
     color:rgb(87, 86, 86);
     margin-top:10px;
     padding-top: 15px;
+    padding-left:10px;
 
 
 }
@@ -133,11 +134,12 @@ table {
       
       
 .note{
-        background-color: rgb(238, 238, 145);
+        background-color:#d884e7;
       }
 
 .one{
   padding:15px;
+  margin:10px;
   border:1 solid grey;
   background-color: rgb(222, 217, 217);
   max-width: 500px;
@@ -145,7 +147,24 @@ table {
 
 .two{
   padding:15px;
+  margin:10px;
   border:1 solid grey;
-  background-color:rgb(209, 242, 159);
+  background-color:rgb(193, 231, 135);
+  max-width: 500px;
+}
+
+.one1{
+  padding:15px;
+  margin:10px;
+  border:1 solid grey;
+  background-color:#52d998;
+  max-width: 500px;
+}
+
+.two2{
+  padding:15px;
+  margin:10px;
+  border:1 solid grey;
+  background-color:rgb(184, 180, 180);
   max-width: 500px;
 }

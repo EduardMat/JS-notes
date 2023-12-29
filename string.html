@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,28 +10,31 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>JS String </title>
-</head>
-<body>
-  <h1>JS String </h1>
-  <pre>JS strings are for storing and manipulating text.
-    A JS string has zero or more characters writtem inside quotes.
-  </pre>
-  <p class="example">Example:</p>
-  <pre>
+    <title>JS String</title>
+  </head>
+  <body>
+    <h1>JS String</h1>
+    <pre>
+    JS strings are for storing and manipulating text.
+    A JS string has zero or more characters written inside quotes.
+  </pre
+    >
+    <p class="example">Example:</p>
+    <pre>
  <span class="blue">let </span> text = <span class="red">"John Doe"</span>;
  script>
 let text = "John Doe";  // String written inside quotes
 document.getElementById("demo").innerHTML = text;
 /script>
   </pre>
-  <p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-let text = "John Doe";  // String written inside quotes
-document.getElementById("demo").innerHTML = text;
-</script>
-<pre>You can use single or double quotes.
+    <script>
+      let text = "John Doe"; // String written inside quotes
+      document.getElementById("demo").innerHTML = text;
+    </script>
+    <pre>
+You can use single or double quotes.
   You can use quotes inside  a string , as long as they don t match the quotes surrounding the string:
   let carName1 = "Volvo XC60";  // Double quotes
   let carName2 = 'Volvo XC60';  // Single quotes
@@ -39,33 +42,40 @@ document.getElementById("demo").innerHTML = text;
 let answer1 = "It's alright";
 let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
-</pre>
+</pre
+    >
 
-<hr/>
-<h2>String Length</h2>
-<p>To find the legth of a string, use the built-in <span class="red"> length</span> property:</p>
-<p class= note>Example:</p>
-<pre>let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let length = text.length;</pre>
-<p class="example">Example:</p>
-<p id="demo"></p>
-<pre>
+    <hr />
+    <h2>String Length</h2>
+    <p>
+      To find the legth of a string, use the built-in
+      <span class="red"> length</span> property:
+    </p>
+    <p class="example">Example:</p>
+    <pre>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;</pre
+    >
+    <p class="example">Example:</p>
+    <p id="demo"></p>
+    <pre>
 script>
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 document.getElementById("demo").innerHTML = text.length;
 /script>
-</pre>
-<p>The length of the string is:</p>
+</pre
+    >
+    <p>The length of the string is:</p>
 
-<p id="demo2"></p>
+    <p id="demo2"></p>
 
-<script>
-let texts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-document.getElementById("demo2").innerHTML = texts.length;
-</script>
-<hr/>
-<h2>Escape Character</h2>
-<pre>
+    <script>
+      let texts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      document.getElementById("demo2").innerHTML = texts.length;
+    </script>
+    <hr />
+    <h2>Escape Character</h2>
+    <pre>
   Because strings must be written within quotes, JS will misunderstand the string:
   <span class="blue">let </span> text = <span>"We are so- called <b>"Vikings"</b> from the north"</span>;
 
@@ -74,50 +84,86 @@ document.getElementById("demo2").innerHTML = texts.length;
   The backlash (\) escape character turns special characters into string characters:
 </pre>
 
-
-
-
-<div class="tablePropr">
-<table>
-      <thead>
-        <tr>
-          <th>CODE  </th>
-          <th>RESULTS  </th>
-          <th>DESCRIPTION </th>
-         </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td> \ `  </td>
-          <td>  `   </td>
-          <td> single quote </td>
-        </tr>
-        <tr>
-          <td>\ "  </td>
-          <td> "  </td>
-          <td> double quotes </td>
-        </tr>
-        <tr>
-          <td> \\</td>
-          <td> \ </td>
-          <td> backlash  </td>
-        </tr>
-        
+    <div class="tablePropr">
+      <table>
+        <thead>
+          <tr>
+            <th>CODE--</th>
+            <th>-RESULTS--</th>
+            <th>-DESCRIPTION--</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>\ `</td>
+            <td>`</td>
+            <td>single quote</td>
+          </tr>
+          <tr>
+            <td>\ "</td>
+            <td>"</td>
+            <td>double quotes</td>
+          </tr>
+          <tr>
+            <td>\\</td>
+            <td>\</td>
+            <td>backlash</td>
+          </tr>
+        </tbody>
       </table>
-      </div>
-      <p>1.The sequence <span> \" </span> inserts a double quote ina string:</p>
+    </div>
+    <pre>  1.The sequence <span> \" </span> inserts a double quote in a string:
       <span class=" blue"> let </span> text = <span class="red"> "We are the so-called \"Vikings\" from the north.";</span>==> We are the so-called "Vikings" from the north.
-      <p>2.The sequence <span class="red"> \ `</span> inserts a single quotes in a string:</p>
-       <span class=" blue"> let </span> text = <span class="red"> " It is \ ` alright";</span>==> It's alright.
 
+  2.The sequence <span class="red"> \ `</span> inserts a single quotes in a string:
+       <span class=" blue">let </span> text = <span class="red"> " It is \ ` alright";</span>==> It's alright.
 
+  3.The sequence \\ inserts a backlash in the string:    
+       <span class=" blue">let </span> text = <span class="red"> "The character \\ is called backlash";</span>==> The character \ is called backslash.
+      </pre>
+  <p>Six other esclapes are valid in JS:</p>
+  <div class= "">Code----|Results  </div>
+  <div class= "one1 "><span class="blue "> \b</span>==>backspace </div>
+  <div class= "two2 "><span class="blue ">\f</span>==>form feed  </div>
+  <div class= "one1"><span class="blue ">\n</span>==>new line </div>
+  <div class= "two2"><span class="blue ">\r</span>==>carriage return</div>
+  <div class= "one1"><span class="blue ">\t </span>==>horizontal tabulator</div>
+  <div class= "two2"><span class="blue ">\v </span>==>vertical tabulator </div>
+  <p class=" note">The 6 escape characters above were originally designed to control typewritters, teletypes, and fax machines.They do not make any sense in HTML. </p>
+  
+  <hr/>
+  <h2>Breaking long code lines</h2>
+  <pre>
+    For best readibility, programmers often like to avoid lines longer than 80 characters.
 
+    1.If a JS statement does not fit on one line, the best place to break it is after an operator:
+  </pre>
+  <p class="example">Example:</p>
+  <pre>
+    document.getElementById("demo").innerHTML =
+   <span class="red">"Hello Dolly!";</span>
+  </pre>
+  <p>2.You can also break up a code line <b> within a string </b> with a single backlash:</p>
+  <p class="example">Example:</p>
+  <pre>
+    document.getElementById("demo").innerHTML = <span class="red"> "Hello \</span>
 
-
-
-
-
-
-
-</body>
+   <span class="red">Dolly!";<span></span>
+  </pre>
+  <p class="note">The <span class="red"> \ </span> method is not the prefferd method.It might mot hav ethe universal support.Some browsers do noot allw spaces behind the <span class="red">\</span> .</p>
+  
+  <p>3.Another safe way to break up a string, is to use string addition:</p>
+  <p class="example">Example:</p>
+  <pre>
+    document.getElementById("demo").innerHTML = <span>"Hello "</span> +
+ <span>"Dolly!";</span>
+  </pre>
+  <p class="blue ">!!!You cannot break up the code with a backlash: <span class="red"> This is wrong!!!</span></p>
+  <p class="example">Example:</p>
+  <pre>
+    document.getElementById("demo").innerHTML = \
+ <span class="red">"Hello Dolly!";</span>
+  </pre>
+  
+      </body>
 </html>

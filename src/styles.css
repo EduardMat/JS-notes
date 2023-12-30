@@ -169,7 +169,22 @@ table {
   max-width: 500px;
 }
 
-.col-sm{
+.listCol{
   color:#870FE6;
   font-size: 20px;
+}
+
+.green{
+  color:rgb(5, 5, 88);
+  padding:5px;
+  font-weight: bolder;
+  background-color:rgb(149, 229, 173);
+}
+
+.wrapping{
+  background-color:#DEDEDE;
+}
+
+.col{
+  color:rgb(48, 43, 43);
 }

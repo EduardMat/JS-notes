@@ -80,8 +80,8 @@ document.getElementById("demo").innerHTML = text.length;
   <span class="blue">let </span> text = <span>"We are so- called <b>"Vikings"</b> from the north"</span>;
 
   The string will be chopped to "We are the so-called". 
-  The solution to avois this problem, is to use the <b>backlash escape character.</b>
-  The backlash (\) escape character turns special characters into string characters:
+  The solution to avois this problem, is to use the <b>backslash escape character.</b>
+  The backslash (\) escape character turns special characters into string characters:
 </pre>
 
     <div class="tablePropr">
@@ -118,10 +118,10 @@ document.getElementById("demo").innerHTML = text.length;
   2.The sequence <span class="red"> \ `</span> inserts a single quotes in a string:
        <span class=" blue">let </span> text = <span class="red"> " It is \ ` alright";</span>==> It's alright.
 
-  3.The sequence \\ inserts a backlash in the string:    
-       <span class=" blue">let </span> text = <span class="red"> "The character \\ is called backlash";</span>==> The character \ is called backslash.
+  3.The sequence \\ inserts a backslash in the string:    
+       <span class=" blue">let </span> text = <span class="red"> "The character \\ is called backslash";</span>==> The character \ is called backslash.
       </pre>
-  <p>Six other esclapes are valid in JS:</p>
+  <p>Six other escapes are valid in JS:</p>
   <div class= "">Code----|Results  </div>
   <div class= "one1 "><span class="blue "> \b</span>==>backspace </div>
   <div class= "two2 "><span class="blue ">\f</span>==>form feed  </div>
@@ -143,14 +143,14 @@ document.getElementById("demo").innerHTML = text.length;
     document.getElementById("demo").innerHTML =
    <span class="red">"Hello Dolly!";</span>
   </pre>
-  <p>2.You can also break up a code line <b> within a string </b> with a single backlash:</p>
+  <p>2.You can also break up a code line <b> within a string </b> with a single backslash:</p>
   <p class="example">Example:</p>
   <pre>
     document.getElementById("demo").innerHTML = <span class="red"> "Hello \</span>
 
    <span class="red">Dolly!";<span></span>
   </pre>
-  <p class="note">The <span class="red"> \ </span> method is not the prefferd method.It might mot hav ethe universal support.Some browsers do noot allw spaces behind the <span class="red">\</span> .</p>
+  <p class="note">The <span class="red"> \ </span> method is not the prefferd method.It might not have the universal support.Some browsers do not allow spaces behind the <span class="red">\</span> .</p>
   
   <p>3.Another safe way to break up a string, is to use string addition:</p>
   <p class="example">Example:</p>
@@ -158,12 +158,78 @@ document.getElementById("demo").innerHTML = text.length;
     document.getElementById("demo").innerHTML = <span>"Hello "</span> +
  <span>"Dolly!";</span>
   </pre>
-  <p class="blue ">!!!You cannot break up the code with a backlash: <span class="red"> This is wrong!!!</span></p>
+  <p class="blue ">!!!You cannot break up the code with a backslash: <span class="red"> This is wrong!!!</span></p>
   <p class="example">Example:</p>
   <pre>
     document.getElementById("demo").innerHTML = \
  <span class="red">"Hello Dolly!";</span>
   </pre>
+<hr/>
+<h2>JS String as objects </h2>
+<pre>
+  Normally, JS strings are primitive values, created from literals:
+   <span class="blue">let </span> x = <span class="red">"John"</span>;
+But strings can also be defined as objects with the keyword <span class="red"> new</span>:
+<span class="blue">let </span> y = <span class="blue"> new </span>String <span class="red">John</span>;
+</pre>
+<p class="example">Example:</p>
+<pre>
+let x = "John";                ==>this is a string 
+let y = <span class="blue"> new </span> String("John");    ==> this is an object  
+</pre>
+<pre class="note">
+  Do not create string objects.
+  The <span class="red"> new </span> keyword complicates the code and slow down the execution speed.
+  String objects can produce unexpected results.
+</pre>
+<pre>
+  When using the <span class="red">== </span> operator, x and y  are <b>equal</b>:
+   let x = <span class="red" > "John"</span>;
+   let y = <span class="blue">new </span> String (<span class="red">"John"</span>)
+</pre>
+<p class="example">Example:</p>
+<pre>
+  p id="demo p>
+
+script>
+let x = "John";        // x is a string
+let y = new String("John");  // y is an object
+document.getElementById("demo").innerHTML = (x <span class="red">==</span>y);
+/script>
+</pre>
+
+<p id="demo3"></p>
+
+<script>
+let x = "John";        // x is a string
+let y = new String("John");  // y is an object
+document.getElementById("demo3").innerHTML = (x==y);
+</script>
+<h2>Never Create Strings as Objects</h2>
+<p class="note">JS objects cannot be compared.Only the numbers can be compared- I think.Comparing two JS objects will always return false.</p>
+<pre>
+
+p id="demo">/p>
+
+script>
+let x = new String("John");  // x is an object
+let y = new String("John");  // y is an object
+document.getElementById("demo").innerHTML = (x==y);
+/script>
+</pre>
+
+<p id="demo4"></p>
+
+<script>
+let xx = new String("John");  // x is an object
+let yy = new String("John");  // y is an object
+document.getElementById("demo4").innerHTML = (xx==yy);
+</script>
+
+
+
+
+
   
       </body>
 </html>

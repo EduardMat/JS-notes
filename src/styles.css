@@ -168,3 +168,8 @@ table {
   background-color:rgb(184, 180, 180);
   max-width: 500px;
 }
+
+.col-sm{
+  color:#870FE6;
+  font-size: 20px;
+}

@@ -213,7 +213,6 @@ function myFunction() {<br/>
   text.toUpperCase();<br/>
 }<br/>
 /script><br/>
-<p>Convert string to upper case:</p>
 
 <button onclick="myFunction()">Try it</button>
 
@@ -230,18 +229,90 @@ function myFunction() {
 
           </div>
 
-          <div class="col-sm"><span class="green">8. JS toLowerCase()</span>
+          <div class="col-sm"><span class="green">8. JS toLowerCase()</span>= change the text to lower case
+        <p>Convert string to lower case:</p>
+
+button onclick="myFunction()">Try it/button>
 
 
-          </div>
+script>
+function myFunction() {
+  let text = document.getElementById("demo13").innerHTML;
+  document.getElementById("demo13").innerHTML =
+  text.toLowerCase();
+}
+/script>
+<p>Convert string to lower case:</p>
+
+<button onclick="myFunctions()">Try it</button>
+
+<p id="demo13">Hello World!</p>
+
+<script>
+function myFunctions() {
+  let texttext = document.getElementById("demo13").innerHTML;
+  document.getElementById("demo13").innerHTML =
+  texttext.toLowerCase();
+}
+</script>
+<hr/>
+</div>
 
 
 
 
         </div>
         <div class="row">
-          <div class="col-sm">9</div>
-          <div class="col-sm">10</div>
+          <div class="col-sm"><span class="green"> 9.JS Concat()</span>= joins two or more strings:<br/>
+
+p id="demo">/p><br/>
+
+script><br/>
+let text1 = "Hello";<br/>
+let text2 = "World!";<br/>
+let text3 = text1.concat(" ",text2);<br/>
+document.getElementById("demo").innerHTML = text3;<br/>
+/script><br/>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo14"></p>
+
+<script>
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat(" ",text2);
+document.getElementById("demo14").innerHTML = text3;
+</script>
+ <hr/>         
+</div>
+
+
+
+          <div class="col-sm"><span class="green">10.JS TRIM()</span> = removes the whitespaces from both sides of a string;
+script><br/>
+let text11 = "     Hello World!     ";<br/>
+let text22 = text11.trim();<br/>
+document.getElementById("demo").innerHTML =<br/>
+"Length text11 = " + text11.length + "<br>Length text22 = " + text22.length;<br/>
+/script><br/>
+ <p id="demo16"></p>
+
+<script>
+let text11 = "     Hello World!     ";
+let text22 = text11.trimStart();
+
+document.getElementById("demo16").innerHTML =
+"Length text11 = " + text11.length + "<br>Length text22 = " + text22.length;
+</script>
+ <hr/>
+
+          </div>
+
+
+
+
+
         </div>
         <div class="row">
           <div class="col-sm">11</div>

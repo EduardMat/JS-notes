@@ -159,12 +159,85 @@ document.getElementById("demo6").innerHTML = str.substr(7,6);
 
 
         <div class="row">
-          <div class="col-sm">5</div>
-          <div class="col-sm">6</div>
+          <div class="col-sm"><span class="green">5. REPLACE() </span>=replaces a specified value with another value in a string:
+            Example:<br/>
+            let text = "Please visit Microsoft!";<br/>
+let newText = text.replace("Microsoft", "W3Schools");<br/>
+==>"Please visit W3Schools!"<br/>
+<p class="note">The <span class="green">replace()</span> method does not change the string it is called on.<br/>
+<span class="green">replace()</span> method returns a new string.<br/>
+<span class="green">replace()</span> method replaces <b>only the first match</b></p>
+<hr/>
+          </div>
+
+
+          <div class="col-sm"><span class="green">6. ReplaceALL() </span>= allows you to specify a regular expression instead of a string to be replaced.
+        If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.<br/>
+        text = text.replaceAll(/Cats/g,"Dogs");<br/>
+        text = text.replaceAll(/cats/g,"dogs");<br/>
+        p id="demo"></p>
+
+script>
+let text = "I love cats. Cats are very easy to love. Cats are very popular";
+text = text.replaceAll(/Cats/g,"Dogs");
+text = text.replaceAll(/cats/g,"dogs");
+
+document.getElementById("demo").innerHTML = text;
+/script>
+<p id="demo11"></p>
+
+<script>
+let sent = "I love cats. Cats are very easy to love. Cats are very popular";
+sent = sent.replaceAll(/Cats/g,"Dogs");
+sent = sent.replaceAll(/cats/g,"dogs");
+
+document.getElementById("demo11").innerHTML = sent;
+</script>
+        <hr/>
+        </div>
+
+
         </div>
         <div class="row">
-          <div class="col-sm">7</div>
-          <div class="col-sm">8</div>
+
+
+
+          <div class="col-sm"><span class="green">7. toUpperCase()</span> = change the lower case to upper case
+            <p>Convert string to upper case:</p>
+button onclick="myFunction()">Try it /button><br/>
+p id="demo">Hello World!</p><br/>
+script><br/>
+function myFunction() {<br/>
+  let text = document.getElementById("demo").innerHTML;<br/>
+  document.getElementById("demo").innerHTML =<br/>
+  text.toUpperCase();<br/>
+}<br/>
+/script><br/>
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo12">Hello World!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo12").innerHTML;
+  document.getElementById("demo12").innerHTML =
+  text.toUpperCase();
+}
+</script>
+<hr/>
+
+          </div>
+
+          <div class="col-sm"><span class="green">8. JS toLowerCase()</span>
+
+
+          </div>
+
+
+
+
         </div>
         <div class="row">
           <div class="col-sm">9</div>

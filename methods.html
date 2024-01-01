@@ -314,7 +314,7 @@ document.getElementById("demo18").innerHTML =
 </div>
 <!--COL 12-->  
           <div class="col-sm"><span class="green">12. JS trimEnd()</span>= removes spaces only from the end of a string;<br/>
-          p id="demo">/p><br/>
+          p id="demo20">/p><br/>
 
 script><br/>
 let textnew11 = "     Hello World!     ";<br/>
@@ -358,12 +358,12 @@ document.getElementById("demo22").innerHTML = textpad.padStart(4,1);
 </div>
 <!--COL 14-->  
           <div class="col-sm"><span class="green"> 14. padEnd()</span>= pads a string from the end.<br/>
-          p id="demo22">/p><br/>
+          p id="demo24">/p><br/>
 
 script><br/>
 let numbers = 5;<br/>
 let textpadend = numbers.toString();<br/>
-document.getElementById("demo24").innerHTML = text.padStart(4,3);<br/>
+document.getElementById("demo24").innerHTML = text.padEnd(4,3);<br/>
 /script><br/>
 <p id="demo24" class="demo"></p>
 
@@ -378,10 +378,93 @@ document.getElementById("demo24").innerHTML = textpadend.padEnd(4,3);
 <!--ROW 8 -->  
         <div class="row">
 <!--COL 15-->  
-          <div class="col-sm">15</div>
+  <div class="col-sm"><span class="green"> 15. charAt()</span> = returns the character at a specific index(position) in a string<br/>
+  p id="demo24" >/p><br/>
+
+script><br/>
+var textcharat = "HELLO WORLD";<br/>
+document.getElementById("demo").innerHTML = textcharat.charAt(0);<br/>
+/script><br/>
+<p id="demo26" class="demo"></p>
+
+<script>
+var textcharat = "HELLO WORLD";
+document.getElementById("demo26").innerHTML = textcharat.charAt(6);
+</script>
+<hr/>
+</div>
 <!--COL 16-->  
-          <div class="col-sm">16</div>
+          <div class="col-sm"><span class="green">16. charCodeAt()</span>= 
+          returns the unicode of the character at a specific index in a string.
+          The method returns a UTF- 16 code- an intiger between 0 and 65535.<br/>
+          I do not understand this one, I need to do more research.<br/>
+          p id="demo26">/p><br/>
+          script><br/>
+let textstrange = "HELLO WORLD";<br/>
+document.getElementById("demo28").innerHTML = text.charCodeAt(1);<br/>
+/script<br/>
+  <p id="demo28" class="demo"></p>
+
+<script>
+let textstrange = "HELLO WORLD";
+document.getElementById("demo28").innerHTML = textstrange.charCodeAt(1);
+</script>
+<hr/>        
+          
+          </div>
         </div>
+<div class="col-sm"><span class="green"> 17. split()</span>= a string can be converted to an array with the split() method.<br/>
+text.split(",")    // Split on commas<br/>
+text.split(" ")    // Split on spaces<br/>
+text.split("|")    // Split on pipe<br/>
+p id="demo30"></p><br/>
+
+script><br/>
+let text = "a,b,c,d,e,f";<br/>
+const myArray = text.split(",");<br/>
+document.getElementById("demo30").innerHTML = myArray[0];<br/>
+/script><br/>
+<p id="demo30"></p>
+
+<script>
+let textsplit = "a,b,c,d,e,f";
+const myArray = texttsplit.split(",");
+document.getElementById("demo30").innerHTML = myArray[0];
+</script>
+--------------------<br/>
+p id="demo32">/p><br/>
+
+script><br/>
+let text = "Hello";<br/>
+const myArr = text.split("");<br/>
+
+text = "";<br/>
+for (let i = 0; i < myArr.length; i++) {<br/>
+  text += myArr[i] + "<br>"
+}<br/>
+document.getElementById("demo").innerHTML = text;<br/>
+/script><br/>
+<p id="demo32"></p>
+
+<script>
+let textsplit2 = "Hello";
+const myArr = textsplit2.split("");
+
+textsplit2 = "";
+for (let i = 0; i < myArr.length; i++) {
+  textsplit2 += myArr[i] + "<br>"
+}
+document.getElementById("demo32").innerHTML = textsplit2;
+</script>
+
+
+
+
+
+
+
+</div>
+
       </div>
     </div>
   </body>

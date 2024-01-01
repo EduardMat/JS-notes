@@ -61,12 +61,14 @@ There are 3 methods for extracting a part of a string:
       </div>
     </div>
     <hr />
-
+<!--Responsive grid-->
     <div class="wrapping">
       <div class="container">
+<!--ROW 1-->  
         <div class="row">
           <div class="col-sm">
             <pre>
+<!--COL 1-->             
    <span class="green">1. LENGTH </span>= returns the length of a string
     Example:
 script>
@@ -74,22 +76,16 @@ let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 document.getElementById("demo").innerHTML = text.<span class="green">length</span>;
 /script><br/>
 The length of the string is:<br/>
-            <p id="demo"></p>
+            <p id="demo" class="demo"></p>
          <script>
               let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
               document.getElementById("demo").innerHTML = text.length;
             </script>
             <hr />
           </div>
-
-          
-          
-          
-          
-          
-          <div class="col-sm">
-        
-            <span class="green">2. SLICE ()</span>= extracts a part of a string and returns the extracted part in a new string.
+<!--COL 2-->  
+<div class ="col-sm">
+<span class ="green">2. SLICE ()</span>= extracts a part of a string and returns the extracted part in a new string.
             The methods takes 2 parameters :start positionand end position (end not included).
             Example:<br/>
             let text = "Apple, Banana, Kiwi";<br/>
@@ -101,7 +97,7 @@ The length of the string is:<br/>
              the end towards the start, results will be "Banana, Kiwi"
         
             <p>The sliced (extracted) part of the string is:</p>
-            <p id="demo2"></p>
+            <p id="demo2" class="demo"></p>
 
             <script>
               let texts = "Apple, Banana, Kiwi";
@@ -110,18 +106,16 @@ The length of the string is:<br/>
             </script>
             <hr/>
         </div>
-
-
-
-
-     <div class="row">
-          <div class="col-sm">
-        <span class="green">3. SUBSTRING() </span>= is similar to <span class="red">slice()</span><br/>
-        <p>The difference is that start and the end values less than 0 are treated as 0 in <span class="green">substring()</span> </p>
+<!--ROW 2 -->  
+<div class="row">
+<!--COL 3-->  
+<div class="col-sm">
+<span class="green">3. SUBSTRING() </span>= is similar to <span class="red">slice()</span><br/>
+<p>The difference is that start and the end values less than 0 are treated as 0 in <span class="green">substring()</span> </p>
         Example:<br/>
         let str = "Apple, Banana, Kiwi";<br/>
         let part = str.substring(7, 13);<br/>
-        <p id="demo4"></p>
+        <p id="demo4" class="demo"></p>
 
 <script>
 let strs = "Apple, Banana, Kiwi";
@@ -130,8 +124,7 @@ document.getElementById("demo4").innerHTML = strs.substring(7,13);
 <p>If you omit the second parameter,<span class="green">substring()</span> will slice out the rest of the string.</p>
  <hr/>         
 </div>
-
-
+<!--COL 4-->  
 <div class="col-sm">
 <span class="green"> 4. SUBSTR()</span> = is similar to <span class="red">slice()</span>
 <p>the difference is that the second parameter specifies the <b>length</b> of the extracted part.</p>
@@ -141,7 +134,7 @@ let part = str.substr (7, 6 );
 <p>The substr() method extract a part of a string
 and returns the extracted parts in a new string:</p>
 
-<p id="demo6"></p>
+<p id="demo6" class="demo"></p>
 
 <script>
 let str = "Apple, Banana, Pears";
@@ -150,15 +143,9 @@ document.getElementById("demo6").innerHTML = str.substr(7,6);
 <hr/>
 </div>
 </div>
-        
-
-
-
-
-
-
-
-        <div class="row">
+<!--ROW 3 -->         
+<div class="row">
+<!--COL 5-->  
           <div class="col-sm"><span class="green">5. REPLACE() </span>=replaces a specified value with another value in a string:
             Example:<br/>
             let text = "Please visit Microsoft!";<br/>
@@ -168,10 +155,9 @@ let newText = text.replace("Microsoft", "W3Schools");<br/>
 <span class="green">replace()</span> method returns a new string.<br/>
 <span class="green">replace()</span> method replaces <b>only the first match</b></p>
 <hr/>
-          </div>
-
-
-          <div class="col-sm"><span class="green">6. ReplaceALL() </span>= allows you to specify a regular expression instead of a string to be replaced.
+</div>
+<!--COL 6-->  
+<div class="col-sm"><span class="green">6. ReplaceALL() </span>= allows you to specify a regular expression instead of a string to be replaced.
         If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.<br/>
         text = text.replaceAll(/Cats/g,"Dogs");<br/>
         text = text.replaceAll(/cats/g,"dogs");<br/>
@@ -184,7 +170,7 @@ text = text.replaceAll(/cats/g,"dogs");
 
 document.getElementById("demo").innerHTML = text;
 /script>
-<p id="demo11"></p>
+<p id="demo11" class="demo"></p>
 
 <script>
 let sent = "I love cats. Cats are very easy to love. Cats are very popular";
@@ -195,14 +181,11 @@ document.getElementById("demo11").innerHTML = sent;
 </script>
         <hr/>
         </div>
-
-
-        </div>
+       </div>
+<!--ROW 4 -->  
         <div class="row">
-
-
-
-          <div class="col-sm"><span class="green">7. toUpperCase()</span> = change the lower case to upper case
+<!--COL 7-->  
+<div class="col-sm"><span class="green">7. toUpperCase()</span> = change the lower case to upper case
             <p>Convert string to upper case:</p>
 button onclick="myFunction()">Try it /button><br/>
 p id="demo">Hello World!</p><br/>
@@ -216,7 +199,7 @@ function myFunction() {<br/>
 
 <button onclick="myFunction()">Try it</button>
 
-<p id="demo12">Hello World!</p>
+<p id="demo12" class="demo">Hello World!</p>
 
 <script>
 function myFunction() {
@@ -226,9 +209,8 @@ function myFunction() {
 }
 </script>
 <hr/>
-
-          </div>
-
+</div>
+<!--COL 8-->  
           <div class="col-sm"><span class="green">8. JS toLowerCase()</span>= change the text to lower case
         <p>Convert string to lower case:</p>
 
@@ -246,7 +228,7 @@ function myFunction() {
 
 <button onclick="myFunctions()">Try it</button>
 
-<p id="demo13">Hello World!</p>
+<p id="demo13" class="demo">Hello World!</p>
 
 <script>
 function myFunctions() {
@@ -256,14 +238,12 @@ function myFunctions() {
 }
 </script>
 <hr/>
+</div> 
 </div>
-
-
-
-
-        </div>
+<!--ROW 5 -->  
         <div class="row">
-          <div class="col-sm"><span class="green"> 9.JS Concat()</span>= joins two or more strings:<br/>
+<!--COL 9-->            
+<div class="col-sm"><span class="green"> 9.JS Concat()</span>= joins two or more strings:<br/>
 
 p id="demo">/p><br/>
 
@@ -276,7 +256,7 @@ document.getElementById("demo").innerHTML = text3;<br/>
 
 <p>The concat() method joins two or more strings:</p>
 
-<p id="demo14"></p>
+<p id="demo14" class="demo"></p>
 
 <script>
 let text1 = "Hello";
@@ -286,44 +266,120 @@ document.getElementById("demo14").innerHTML = text3;
 </script>
  <hr/>         
 </div>
+<!--COL 10-->  
 
 
-
-          <div class="col-sm"><span class="green">10.JS TRIM()</span> = removes the whitespaces from both sides of a string;
+<div class="col-sm"><span class="green">10.JS TRIM()</span> = removes the whitespaces from both sides of a string;
 script><br/>
 let text11 = "     Hello World!     ";<br/>
 let text22 = text11.trim();<br/>
 document.getElementById("demo").innerHTML =<br/>
 "Length text11 = " + text11.length + "<br>Length text22 = " + text22.length;<br/>
 /script><br/>
- <p id="demo16"></p>
+ <p id="demo16" class="demo"></p>
 
 <script>
 let text11 = "     Hello World!     ";
-let text22 = text11.trimStart();
+let text22 = text11.trim();
 
 document.getElementById("demo16").innerHTML =
 "Length text11 = " + text11.length + "<br>Length text22 = " + text22.length;
 </script>
  <hr/>
-
-          </div>
-
-
-
-
-
-        </div>
+</div>
+</div>
+<!--ROW 6 -->  
         <div class="row">
-          <div class="col-sm">11</div>
-          <div class="col-sm">12</div>
-        </div>
+<!--COL 11-->  
+          <div class="col-sm"><span class="green">11. JS trimStart()</span>= removes spaces from the start of a string;<br/>
+          p id="demo">/p><br/>
+
+script><br/>
+let textnew1 = "     Hello World!     ";<br/>
+let textnew2 = textnew1.trimStart();<br/>
+
+document.getElementById("demo").innerHTML =<br/>
+"Length text1 = " + textnew1.length + "<br>Length text2 = " + textnew2.length;
+/script> 
+  <p id="demo18" class="demo"></p>
+
+<script>
+let textnew1 = "     Hello World!     ";
+let textnew2 = textnew1.trimStart();
+
+document.getElementById("demo18").innerHTML =
+"Length textnew1 = " + textnew1.length + "<br>Length textnew2 = " + textnew2.length;
+</script>  
+<hr/>      
+</div>
+<!--COL 12-->  
+          <div class="col-sm"><span class="green">12. JS trimEnd()</span>= removes spaces only from the end of a string;<br/>
+          p id="demo">/p><br/>
+
+script><br/>
+let textnew11 = "     Hello World!     ";<br/>
+let textnew22 = textnew1.trimStart();<br/>
+
+document.getElementById("demo").innerHTML =<br/>
+"Length text11 = " + textnew1.length + "<br>Length text22 = " + textnew22.length;
+/script> 
+  <p id="demo20" class="demo"></p>
+
+<script>
+let textnew11 = "     Hello World!     ";
+let textnew22 = textnew11.trimEnd();
+
+document.getElementById("demo20").innerHTML =
+"Length textnew11 = " + textnew11.length + "<br>Length textnew22 = " + textnew22.length;
+</script>        
+<hr/>          
+</div>
+</div>
+<!--ROW 7 -->  
         <div class="row">
-          <div class="col-sm">13</div>
-          <div class="col-sm">14</div>
-        </div>
+<!--COL 13-->  
+          <div class="col-sm"><span class="green"> 13. padStart()</span>= pads a string from a start, adding another string until 
+            reaches a given length.<br/>
+p id="demo22">/p><br/>
+
+script><br/>
+let numb = 5;<br/>
+let text = numb.toString();<br/>
+document.getElementById("demo22").innerHTML = text.padStart(4,1);<br/>
+/script><br/>
+<p id="demo22" class="demo"></p>
+
+<script>
+let numb = 5;
+let textpad = numb.toString();
+document.getElementById("demo22").innerHTML = textpad.padStart(4,1);
+</script>
+<hr/>
+</div>
+<!--COL 14-->  
+          <div class="col-sm"><span class="green"> 14. padEnd()</span>= pads a string from the end.<br/>
+          p id="demo22">/p><br/>
+
+script><br/>
+let numbers = 5;<br/>
+let textpadend = numbers.toString();<br/>
+document.getElementById("demo24").innerHTML = text.padStart(4,3);<br/>
+/script><br/>
+<p id="demo24" class="demo"></p>
+
+<script>
+let numbers = 5;
+let textpadend = numbers.toString();
+document.getElementById("demo24").innerHTML = textpadend.padEnd(4,3);
+</script>
+<hr/>  
+</div>
+</div>
+<!--ROW 8 -->  
         <div class="row">
+<!--COL 15-->  
           <div class="col-sm">15</div>
+<!--COL 16-->  
           <div class="col-sm">16</div>
         </div>
       </div>

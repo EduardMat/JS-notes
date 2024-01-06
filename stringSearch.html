@@ -10,9 +10,118 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>String Search</title>
 </head>
 <body>
-    
+  <h1>String Search()</h1>
+  <p> 
+    <span class="green">IMPORTANT:</span><br/>
+    <br/>
+    1. <span class="blue">indexOf()</span> and <span class="blue">lastIndexOf()</span> return -1 if the text is not found and both 
+    search methods accept a second parameter as a starting position for a search.<br/>
+   <span class="green">Example:</span> let index = text.indexOf("locate", <span>15</span>) ==> the search will start at position 15.
+  <br/>
+  <br/>
+  2. The two methods <span class="red"> indexOf()</span> and the <span class="red"> search()</span> seems to be equal, 
+  they accept the same arguments(parameters), and return the same value.<br/>
+  However, there are two differences:<br/>
+  -<span class="red">search()</span> cannot take a second start position;<br/>
+  -<span class="red">indexOf()</span> instead cannot take powerful search values (regular expressions);<br/>
+  </p>
+  <hr/>
+<!--Here starts the responsive grid-->
+<div class="listCol">
+      <div class="container text-center">
+        <div class="row"><!--This is the first row-->
+          <div class="col-sm">
+             <h2> 1. JS Script String indexOf()</h2>
+  <p>
+    The <span class="red">indexOf()</span> method returns the <b> index </b>(position) of the <b>first</b> occurance of a string in a string, or ot returns -1 if the string is not found:<br/>
+    <span class="green">Example:</span><br/>
+    <span class="blue">let</span> text = <span class="red">"Please locate where `locate` is found first time!"</span><br/>
+    <span class="blue">let</span> index = text.indexOf("locate");<br/>
+  </p>
+   <p id="demo" class="demo"></p>
+
+<script>
+let text = "Please locate where 'locate' is found first time!";
+let index = text.indexOf("locate");
+document.getElementById("demo").innerHTML = index; 
+</script> 
+<hr/>   
+</div>
+
+
+          <div class="col-sm">
+<h2>2. JS String lastIndexOf()</h2>
+<p>The <span class="red"> lastIndexOf()</span> method returns the <b>index</b> of the <b> last </b> occurrence of a specific text in a string:<br/>
+  <span class="green">Example</span><br/>
+<span class="blue">let</span> texts = <span class="red">"Please locate where `locate` is found last time!"</span><br/>
+<span class="blue">let</span> indexs = texts.lastIndexOf("locate");<br/>
+</p>
+<p id="demo1" class="demo"></p>
+
+<script>
+let texts = "Please locate where 'locate' occurs!";
+let indexs = texts.lastIndexOf("locate");
+document.getElementById("demo1").innerHTML = indexs;
+</script>
+<hr/>
+   </div>
+    </div>
+
+
+        
+
+        <div class="row"><!--This is the second row -->
+          <div class="col-sm">
+            <h2>3. JS String search()</h2>
+<p>The <span class="red">search()</span> method searches for a string (or a regular expression) and returns the position of the match:<br/>
+  <span class="green">Example</span><br/>
+<span class="blue">let</span> textes = <span class="red">"Please locate where `locate` is found last time!"</span><br/>
+textes.search("locate");<br/>
+</p>
+<p id="demo2" class="demo"></p>
+<script>
+let textes = "Please locate where 'locate' occurs!";
+let indexes = textes.search("locate");
+document.getElementById("demo2").innerHTML = indexes; 
+</script>
+<hr/>
+          </div>
+          <div class="col-sm">
+             <h2>4. JS String match()</h2>
+<p>
+  The <span class="red">match()</span> method returns an array containing the results
+   of matching a string against a string (or a regular expression).<br/>
+   <span class="green">Example:</span><br/>
+   <span class="blue">let </span> text = <span class="red">
+    "The rain in SPAIN stays mainly in the plain."</span><br/>
+    text.match(<span>"ain"</span>);<br/>
+</p>
+
+<p id="demo4" class="demo"></p>
+
+<script>
+let texttext = "The rain in SPAIN stays mainly in the plain";
+const myArr = texttext.match("ain");
+document.getElementById("demo4").innerHTML = myArr.length + " " + myArr;
+</script>
+<hr/>
+</div>
+  </div>
+
+
+        <div class="row"><!--This is the third row-->
+          <div class="col-sm">subtr()</div>
+          <div class="col-sm">concat</div>
+          
+        </div>
+        <div class="row">
+          <div class="col-sm">replace()</div>
+          <div class="col-sm"></div>
+          </div>
+      </div>
+    </div>
 </body>
 </html>

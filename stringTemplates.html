@@ -117,8 +117,43 @@ document.getElementById("demo11").innerHTML = total;
     </div>
 
     <div class="row">
-      <div class="col-sm">7</div>
-      <div class="col-sm">8</div>
+      <div class="col-sm">
+          <h2>HTML Templates</h2>
+          <span class="green">Example:</span><br/>
+script><br/>
+let header = "Template Strings";<br/>
+let tags = ["template strings", "javascript", "es6"];<br/>
+
+let html = `h2>${header} /h2> ul>`; <br/>
+
+for (const x of tags) { <br/>
+  html += `li>${x} /li>`; <br/>
+} br/>
+
+html += `/ul>`; <br/>
+document.getElementById("demo14").innerHTML = html;<br/>
+/script>
+<p id="demo14" class="demo"></p>
+
+<script>
+let header = "Template Strings";
+let tags = ["template strings", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo14").innerHTML = html;
+</script>
+<hr/>
+      </div>
+      <div class="col-sm">
+
+        
+      </div>
     </div>
 
     <div class="row">

@@ -10,9 +10,66 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>JS Numbers</title>
 </head>
 <body>
-    
+    <h1>JS Numbers </h1>
+    <p>Unlike many other programming languages, JS does not define diffent types of numbers, like intigers, short, long, floating- point.
+     <br/> 
+  JS numbers are always stored as double precision floating point numebrs, 
+   the interbational IEEE 745 standard.
+  <br/>
+  This format stored numbers in 64 bits, where the number - the fraction- is 
+  stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign bit 63:<br/>
+  Value:52 bits (0- 51)<br/>
+  Exponent:11 bits(52-62)<br/>
+  Sign:1 bit(63)<br/>
+</p>
+    <div class="container">
+<div class="row">
+<div class="col-sm">
+  <h2>1. Intiger precision</h2>
+  <p>Intigers - numbers without a period or exponent notation- are accurate up to 15 digits:</p>
+  <span class="green">Example:</span><br/>
+  <span class="blue">let </span> x = <span class="red">99999999</span>==>this will be 99999999;<br/>
+  <span class="blue">let </span> x = <span class="red">999999999999999999</span>==>this will be 1000000000000;<br/>
+<span>The maximum number of intigers are 17.</span>
+<br/>
+</div>
+<div class="col-sm">
+  <h2>2. Foating precision</h2>
+  <p>Floatomg point arithmetic is not always 100 % accurate:</p>
+  <span class="green">Example:</span><br/>
+  <span class="blue">let </span> x = <span class="red">0.2 </span>+ <span class="red">0.1</span> ; <br/>
+  <p id="demo" class="demo"></p>
+
+<script>
+let x = 0.2 + 0.1;
+document.getElementById("demo").innerHTML = "0.2 + 0.1 = " + x;
+</script>
+<br/>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-sm"></div>
+<div class="col-sm"></div>
+</div>
+
+
+<div class="row">
+<div class="col-sm"></div>
+<div class="col-sm"></div>
+</div>
+
+<div class="row">
+<div class="col-sm"></div>
+<div class="col-sm"></div>
+</div>
+
+
+
+    </div>
 </body>
 </html>

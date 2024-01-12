@@ -50,24 +50,102 @@ document.getElementById("demo").innerHTML = "0.2 + 0.1 = " + x;
 <br/>
 </div>
 </div>
+<hr/>
+
+<h2>3. Adding numbers and strings</h2>
+<p class="blue">WARNING !!<br/>
+JavaScript uses the + operator for both addition and concatenation.<br/>
+Numbers are added. Strings are concatenated.</p>
+
+<div class="row">
+<div class="col-sm"> 
+  <p>When adding two numebrs the result will be a number:<br/>
+   let x = 10;<br/>
+  let y = 20;<br/>
+let z = x + y ;<br/></p>
+<p class="demo">The result will be 30;</p>
+</div>
+
+<div class="col-sm"> 
+<p>If you add two strings, the result will be a string concatenation:<br/>
+  let x = "10";<br/>
+  let y = "20";<br/>
+  let z = x + y ;<br/>
+</p>
+<p class= demo>The result will be 1020;</p>
+</div>
+<div class="col-sm">
+  <p>If you add a number and a string, the result will be a string concatanation:<br/>
+  let x = 10;<br/>
+  let y = "20";<br/>
+  let z = x + y ; <br/>
+  </p>
+  <p class="demo">The results will be 1020; </p>
+</div>
+<div class="col-sm">
+  <p>If you add a string and a number, the result will be a concatenation:<br/>
+  let x = "10";<br/>
+  let y = 20;<br/>
+  let z = x + y ; <br/>
+  </p>
+  <p class="demo">The results will be 1020; </p>
+  </p>
+</div>
+<div class="col-sm">
+  <p> let x = 10;<br/>
+  let y = 20;<br/>
+  let z = "The results is "x + y ; <br/></p>
+  <p class="demo">The results will be 1020; </p>
+</div>
+</div>
+<hr/>
 
 
+<h2>4. Numeric Strings </h2>
+<p>JS will try to convert strings to numbers in all numeric operations:<br/>
+JS strings can have numeric content:</p>
+<div class="row">
+<div class="col-sm">
+  <p>This is ok:</p>
+  let x = 100;<br/>
+  let y = "100";<br/>
+</div>
+<div class="col-sm">
+  <p>This is ok:</p>
+  let x = "100";<br/>
+  let y = "10";<br/>
+  let z = x / y; <br/>
+  <p class="demo">10</p>
+
+</div>
+<div class="col-sm">
+  <p>This is ok:</p>
+  let x = "100";<br/>
+  let y = "10";<br/>
+  let z = x * y; <br/>
+  <p class="demo">1000</p>
+
+</div>
+<div class="col-sm">
+  <p>This is ok:</p>
+ let x = "100";<br/>
+  let y = "10";<br/>
+  let z = x - y; <br/>
+  <p class="demo">90</p>
+ </div>
+<div class="col-sm">
+  <p>This is not ok:</p>
+  let x = "100";<br/>
+  let y = "10";<br/>
+  let z = x + y; <br/>
+  <p class="demo">10010</div>
+</div>
+<p>In the last example, the "+ " is used by JS to concatenate strings.</p>
+<hr/>
 <div class="row">
 <div class="col-sm"></div>
 <div class="col-sm"></div>
 </div>
-
-
-<div class="row">
-<div class="col-sm"></div>
-<div class="col-sm"></div>
-</div>
-
-<div class="row">
-<div class="col-sm"></div>
-<div class="col-sm"></div>
-</div>
-
 
 
     </div>

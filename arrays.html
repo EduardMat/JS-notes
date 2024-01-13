@@ -75,20 +75,130 @@ document.getElementById("demo6").innerHTML = cars;
     </div>
   </div>
   <div class="row">
-    <div class="col-sm"><h2>1. Accessing an array element</h2> </div>
-    <div class="col-sm">col 2 </div>
+    <div class="col-sm"><h2>5.Arrays are objects </h2>
+    <p class="blue">Arrays are a special type of objects.Arrays use numbers to acces its elements.</p>
+    Example:<br/>
+    const person = ["John", "Doe", 46];<br/>
+    person[0] = "John";
+    <p class="blue">Objects are using names to access its elements: </p>
+    Example:<br/>
+    const person = {firstName= "John", lastName = "Doe", age:46};<br/>
+    person.firstName = "John";
+    <hr/>
+    </div>
+    <div class="col-sm">   
+<h2>6. Array Elements can be objects</h2>
+<p>JS variables can be objects.Arrays are special kind of objects.<br/>
+Because of this, ypu can have variables of different types in the same Array.<br/>
+You can have an object in a array, you can have functions in an Array.You can have arrays in arrays.</p>
+Examples:<br/>
+myArray[0] = Date.now;<br/>
+myArray[1] = myFunction;<br/>
+myArray[2] = myCars;<br/>
+<hr/>
+</div>
   </div>
   <div class="row">
-    <div class="col-sm"><h2>1. Accessing an array element</h2> </div>
-    <div class="col-sm">col 2 </div>
+    <div class="col-sm">
+      <h2>7. Array properties and methods</h2> 
+    <p class="blue">The real strength of JS arrays are the built- in array properties and methods:</p><br/>
+    Example:<br/>
+    cars.length ===>returns the numbers of elements;<br/>
+    cars.sort()===>sort the array
+<hr/>
+  </div>
+
+    <div class="col-sm">
+    <h2>8. The length Property</h2>
+    <p>The <span class="red"> length </span> property of an array returns the length of an array (the numbers of array elements).</p><br/>
+    Example:<br/>
+    const fruits =["Banana", "Orange","Apple", "Mango" ];<br/>
+    let length = fruits.length;<br/>
+    <p class="demo">4 </p>
+    <hr/>
+  </div>
   </div>
   <div class="row">
-    <div class="col-sm"><h2>1. Accessing an array element</h2> </div>
-    <div class="col-sm">col 2 </div>
+    <div class="col-sm">
+      <h2>9.Accessing the First Array Element</h2> 
+      Example:<br/>
+      const fruits = ["Banana","Orange", "Apple", "Mango"];<br/>
+      let fruitOne = fruits[0]<br/>
+      <p class="demo">Banana</p>
+      let fruitThree = [3];<br/>
+      <p class="demo">Mango</p>
+<hr/>
+  </div>
+
+    <div class="col-sm">
+   <h2>10.Accessing the last array element</h2>   
+   Example:<br/>
+   const fruits = ["Banana","Orange", "Apple", "Mango"];<br/>
+   let lastFruit = fruits[fruits.length - 1 ];<br/>
+   <p class="demo">Mango</p>
+    let lastFruits = fruits[fruits.length - 2 ];<br/>
+   <p class="demo">Apple</p>
+    <hr/>
+    </div>
   </div>
   <div class="row">
-    <div class="col-sm"><h2>1. Accessing an array element</h2> </div>
-    <div class="col-sm">col 2 </div>
+    <div class="col-sm">
+      <h2>11.Lopping array elements </h2> 
+      <p class="blue">One way of looping through an array, is using a <span class="red">for </span> loop:</p>
+      const fruits = ["Banana","Orange", "Apple", "Mango"];<br/>
+      let fLen = fruits.length;<br/>
+      let text = "ul>";<br/>
+      for ( let i = 0; i < fLen; i++){<br/>
+        text += "li>" + fruits[i] + "/li>";<br/>
+      }<br/>
+       text += "/ul>"<br/>
+    <p id="demo44"></p>
+
+<script>
+const goodFruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = goodFruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + goodFruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo44").innerHTML = text;
+</script>
+<hr/>    
+    
+    </div>
+    <div class="col-sm">
+      <h2>12. Array.forEach() function </h2>
+      Example:<br/>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+      let text = "ul>";<br/>
+      fruits.forEach(myFunction);<br/>
+      text += "/ul>"; <br/>
+      
+      function  myFunction(value){<br/>
+        text += "li>" + value + "/li>";<br/>
+      }<br/>
+      <p id="demo46"></p>
+
+<script>
+const otherFruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let texts = "<ul>";
+otherFruits.forEach(myFunction);
+texts += "</ul>";
+
+document.getElementById("demo46").innerHTML = texts;
+
+function myFunction(value) {
+  texts += "<li>" + value + "</li>";
+} 
+</script>
+
+    
+    
+    </div>
   </div>
   <div class="row">
     <div class="col-sm"><h2>1. Accessing an array element</h2> </div>

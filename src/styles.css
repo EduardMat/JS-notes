@@ -185,9 +185,13 @@ table {
   background-color:#edebeb;
 }
 
-.col{
+.col-sm{
   color:rgb(48, 43, 43);
+  border-left: 3px solid grey;
+
+  
 }
+
 
 .demo{
   color:rgb(41, 40, 40);

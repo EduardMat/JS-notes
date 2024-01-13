@@ -10,9 +10,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>JS BigInt </title>
 </head>
 <body>
-    
+    <h1>JS BigInt</h1>
+    <p>
+      JS BigInt variables are used to store big integer values that are too big to be repersented by a normal JS.
+    </p>
+    <pre>
+     JS BigInt are variables used to store big integer values too big to be represented by a normal JS number. 
+     This is how you can create a <span class="red">BigInt</span>:
+     <p class="example">Example:</p>
+     let x = <span class="red">9999999999999999</span>;
+     let y = <span class="red">9999999999999999n</span>;
+     <p id="demo" class="demo"></p>
+    </pre>
+<script>
+let x = 9999999999999999;
+let y = BigInt("9999999999999999");
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+ <hr/> 
+ <pre>  
+     <p class="example">Example:</p>
+     let x = 123456789012345n;
+     let y = BigInt(123456789012345)
+     
+    </pre>
+    <p id="demo2" class="demo"></p>
+
+<script>
+let xx= 123456789012345678901234567890n;
+let yy = BigInt("123456789012345678901234567890");
+document.getElementById("demo2").innerHTML = xx+ "<br>" + yy;
+</script>
+
 </body>
 </html>

@@ -14,7 +14,11 @@
 </head>
 <body>
     <h1>Array Methods </h1>
-  
+  <h3>
+    Many languages allows <span class="red">negative bracket indexing 
+
+    </span> like (-1) to access elements from the end of an object/array/string.This is not possible in JS, reason for each <span class="red"> at()</span> has been introduced.
+  </h3>
     
 <div class="container">
       <div class="row">
@@ -81,11 +85,58 @@
 
         
       <div class="row">
-      <div class="col-sm"><h2> Array at()</h2></div>
-      <div class="col-sm"><h2> Array join() </h2></div>
+      <div class="col-sm">
+        <h2> Array at()</h2>
+      <p>The at() method returns am indexed element from an array.</p>
+       const fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+        let fruit = fruits.at(3);<br/>
+      <p id="demo4" class="demo"></p>
+      <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fruit = fruits.at(3);
+        document.getElementById("demo4").innerHTML = fruit;
+      </script>
+      <hr/>
+      
       </div>
+      <div class="col-sm">
+        <h2> Array join() </h2>
+      <p>The <span class="red">join()</span> methods alsp joins all array elements into a string.<br/>
+      It behaves just like <span class="red"> toString()</span>, but in addition you can specify a separator.
+      </p>
+     Example:<br/>
+const newFruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+document.getElementById("demo").innerHTML = newFruits.join(" * ");
+  <p id="demo6" class=demo></p>
+
+<script>
+const newFruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo6").innerHTML = newFruits.join(" * ");
+</script>    
+ <hr/>     
+      
+      
+      </div>
+      </div>
+      <p class="blue">Then you work with arrays, it easy to remove elements and add new elements.<br/>
+      The pop is getting out items from an array, and the push is adding items into an array.</p>
       <div class="row">
-      <div class="col-sm"><h2> Array pop() </h2></div>
+      <div class="col-sm">
+        <h2> Array pop() </h2>
+      <p>The <span class="red"> pop()</span> methods removes the last element from an array.</p>
+      Example:<br/>
+      const otherFruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+      otherFruits.pop();<br/>
+      <p id="demo8" class="demo"></p>
+<p id="demo10" class="demo"></p>
+
+<script>
+const otherFruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo8").innerHTML = otherFruits.pop();
+document.getElementById("demo10").innerHTML = otherFruits;
+</script>
+ <hr/>     
+      </div>
       <div class="col-sm"><h2> Array push() </h2></div>
       </div>
       <div class="row">

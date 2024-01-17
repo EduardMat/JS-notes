@@ -90,6 +90,8 @@
       <p>The at() method returns am indexed element from an array.</p>
        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
         let fruit = fruits.at(3);<br/>
+        or:<br/>
+        let fruit = fruits[3];<br/>
       <p id="demo4" class="demo"></p>
       <script>
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -137,7 +139,25 @@ document.getElementById("demo10").innerHTML = otherFruits;
 </script>
  <hr/>     
       </div>
-      <div class="col-sm"><h2> Array push() </h2></div>
+      <div class="col-sm">
+        <h2> Array push() </h2>
+      <p>The <span class="red"> push()</span> medthods add a new element to an array - at the end.</p>
+      const oldFruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+      oldFruits.push("Kiwi");<br/>
+    <p id="demo12" class=demo></p>
+<p id="demo14" class="demo"></p>
+
+<script>
+const oldFruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo12").innerHTML = oldFruits;
+oldFruits.push("Kiwi");
+document.getElementById("demo14").innerHTML = oldFruits;
+</script>
+<hr/>
+      
+      
+      
+      </div>
       </div>
       <div class="row">
       <div class="col-sm"><h2> Arrayshift() </h2></div>

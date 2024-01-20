@@ -111,12 +111,12 @@ table {
 }
 
 .red{
-    color:red;
+    color:rgb(236, 72, 72);
     font-weight: bolder;
 }
 
 .blue{
-  color:blue;
+  color:rgb(45, 45, 164);
   font-weight: bolder;
 }
 

@@ -36,21 +36,100 @@
             Example:<br/> 
             Search an array for the item "Apple":<br/>
             <span class="blue">const </span>fruits = [<span class="red">"Apple", "Orange", "Apple", "Mango"</span>];<br/>
-            <span class="blue">let </span> position = fruits.lastIndexOf(<span>"Apple"</span>);<br/>
+            <span class="blue">let </span> position = fruits.lastIndexOf(<span class="red">"Apple"</span>);<br/>
             <span class="demo">Apple is found in position 2</span><br/>
             <hr/>
         </div>
         </div>
          <div class="row">
-            <div class="col-sm"><h2>Array Includes()</h2></div>
-            <div class="col-sm">Aarray find()</div>
+            <div class="col-sm">
+                <h2>Array Includes()</h2>
+            <p><span>array.includes</span> is allowing to check if an element is present in an array, including NaN- unlike of indexOf()</p>
+            Example:<br/>
+            <span class="blue">const </span>fruits = [<span class="red">"Apple", "Orange", "Apple", "Mango"</span>];<br/>
+            fruits.includes(<span class="red">"Mango"</span>);<br/>
+            <span class="demo">returns:true</span><br/>
+            <hr/>
+            </div>
+            <div class="col-sm">
+                <h2>Array find()</h2>
+            <p>The <span class="red"> find()</span> returns the value of the first array element that passed a test function.
+            This example finds (returns the value of ) the first element that is larger than 18.</p>
+            Example:<br/>
+            <span class="blue ">const</span> numbers = [<span class="red">4,9,16,25,29</span>];<br/>
+            <span class="blue ">let </span> first = numebrs.find(myFunction);<br/>
+            <span class="blue">function </span> myFunction(value, index, array){
+                return value > 18;<br/>
+            }<br/>
+            <span id="demo" class="demo"></span><br/>
+
+<script>
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+<hr/>
+            </div>
         </div>
          <div class="row">
-            <div class="col-sm">Array findIndex()</div>
-            <div class="col-sm">Array findLast()</div>
+            <div class="col-sm">
+                <h2>Array findIndex()</h2>
+            <p><span>findIndex()</span> method returns the index of the first array element that passes a test function.</p>
+            This example finds (returns the value of ) the first element that is larger than 18.</p>
+            Example:<br/>
+            <span class="blue ">const</span> numbers = [<span class="red">4,9,16,25,29</span>];<br/>
+            <span class="blue ">let </span> firsts = numebrs.find(myFunction);<br/>
+            <span class="blue">function </span> myFunction(value, index, array){
+                return value > 18;<br/>
+            }<br/>
+            <span id="demo2" class="demo"></span><br/>
+
+<script>
+const newNumbers = [4, 9, 16, 25, 29];
+let firsts = newNumbers.findIndex(myFunction);
+
+document.getElementById("demo2").innerHTML = "First number over 18 has index " + firsts;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+<hr/>
+            </div>
+            <div class="col-sm">
+                <h2>Array findLast()</h2>
+            <p><span class="red"> findLast()</span>method that will start from the end of an array and return the value of the first element that satisfies a condition. </p>
+            <span class="blue">const </span> temp = [<span class="red">27, 28, 30, 40, 42, 35, 30</span>];<br/>
+            <span class="blue ">let </span> high = temp.findLastIndex(x => x > <span class="red">40 </span>);<br/>
+            <span class="demo">The last temperature over 40 was 42 </span>
+            <hr/>
+            </div>
         </div>
          <div class="row">
-            <div class="col-sm">Array findLastIndex()</div>
+            <div class="col-sm">
+                <h2>Array findLastIndex()</h2>
+            <p><span class="red"> findLastIndex()</span>finds the index(not the value, but the index position ) of the last element that satisfies a condition. </p>
+            <span class="blue">const </span> temp = [<span class="red">27, 28, 30, 40, 42, 35, 30</span>];<br/>
+            <span class="blue ">let </span> pos = temp.findLast(x => x > <span class="red">40 </span>);<br/>
+            <p id="demo4" class="demo"></p>
+
+<script>
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let pos = temp.findLastIndex(x => x > 40);
+
+document.getElementById("demo4").innerHTML = "The last temperature over 40 was in position " + pos;
+</script>
+
+
+
+            <hr/>
+
+            </div>
             <div class="col-sm">This is empty</div>
         </div>
 

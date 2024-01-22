@@ -55,7 +55,6 @@
       <span class="blue">const</span> months = [<span>"Jan", "Febr" , "Mar", Apr </span>];<br/>
       <span class="blue">const</span> sorted = months.toSorted();<br/>
       <span class="demo">Apr,Feb,Jan,Mar</span>
-      <hr/>
       </div>
       <div class="col-sm">
         <h2> Array toReversed() </h2>
@@ -64,13 +63,13 @@
   <span class="red">reverse()</span> =>alters the existing array;<br/>  
   <span class="blue">const</span> months = [<span>"Jan", "Febr" , "Mar", Apr </span>];<br/>
       <span class="blue">const</span> reverse = months.toReversed();<br/>
-      <span class="demo">  </span>
-      <hr/>
+      <span class="demo">Apr,Mar,Feb,Jan</span>
      </div>
     </div>
    <div class="row">
       <div class="col-sm"> 
-        <h2> Numeric Sort</h2>
+        <hr/>
+        <h2 class="blue"> Numeric Sort</h2>
         <pre>
 By default, the <span class="red">sort() </span> function sorts values as <b>strings.</b>
 This works well for strips ("Apple" comes before "Banana").
@@ -91,7 +90,7 @@ You can fix this by prviding a <b>compare function.</b>
     </div>
     <div>
       <div class="col-sm">
-    <h2>The compare function</h2>
+    <h2 class="blue">The compare function</h2>
     <pre>
       The purpose of the compare function is to define an alternative sort order.
       The compare function should return a negative, zero or positive value, depending on the arguments:
@@ -108,7 +107,7 @@ You can fix this by prviding a <b>compare function.</b>
        <span class="red"> (a - b )</span>. 
        When comparing 40 and 100, the <span class="red"> sort()</span> method calls the compare function (40, 100).
        The function calculates 40 - 100 <span class="red">(a - b)</span>, and sice the result is negative(-60), the sort function will sort 40 as a value lower than 100.
-       You can use this code snippet to experiment with numerically and alphabetically sorting:
+       You can use this code snippet to experiment with numerically and alphabetically sorting:</pre>
        <button onclick="myFunction1()">Sort Alphabetically</button>
        <button onclick="myFunction2()">Sort Numerically</button>
 
@@ -128,8 +127,7 @@ function myFunction2() {
   document.getElementById("demo22").innerHTML = points;
 }
 </script>
-      
-    </pre>
+      <hr/>
 </div>
 </div>
 <div class="row">
@@ -137,17 +135,185 @@ function myFunction2() {
         <h2>Random Sort</h2>
       <p>Sorting an Array in a Random Order<br/>
       Using a sort function, like exaplained above, you can sort a numeric array in random order. </p>
+      <span class="blue"> const </span> points = [<span class="red"> 40, 100, 1, 5, 25, 10</span>];<br/>
+      points.sort(function(){return <span>0.5 - </span> Math.random()});<br/>
+      <button onclick="myFunction()">Try it</button>
+<p id="demo24" class="demo"></p>
+
+<script>
+const newPoints = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo24").innerHTML = newPoints;  
+
+function myFunction() {
+  newPoints.sort(function(){return 0.5 - Math.random()});
+  document.getElementById("demo24").innerHTML = newPoints;
+}
+</script>    
+      </div>
+      <div class="col-sm">
+         <h2>The fisher yates mathod()</h2>
+        <p>The points.sort() method in the example above is not accurate.It will favor some numbers over others.<br/>
+        The most popular correct method for random sorting, is called the Fisher Yates shuffle.</p>
+        <span class="blue">const </span> points = [<span class="red">40, 1000, 1 , 5, 25, 10</span>];<br/>
+        <span class="blue "> for </span> (<span class="blue"> let </span> i = points.length -1;i > 0; i--){<br/>
+         let j = Math/floor(Math.random() * (i + 1));<br/>
+         let k = points[i];<br/>
+         points[i] = points[j];<br/>
+         points[j] = k;<br/>
+        }<br/>
+        <button onclick="myFunction()">Try it</button>
+<p id="demo34"></p>
+
+<script>
+const otherPoints = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo34").innerHTML = otherPoints;  
+
+function myFunction() {
+  for (let i = otherPoints.length -1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i+1));
+    let k = otherPoints[i];
+    otherPoints[i] = otherPoints[j];
+    otherPoints[j] = k;
+  }
+  document.getElementById("demo34").innerHTML = otherPoints;
+}
+</script>    
+        
+        </div>
+    </div>
+<hr/>
+<pre>
+ <span class="blue">Find the Lowest or the Highest Array value.</span>
+There are no buiilt in functions for findong the max or the min value in an array.
+To find the lowest of the highest value you have 3 options:
+1.Sort the array and read the first or last element;
+2.Use Math.min() or Math.max();
+3.write a home made function;
+</pre>
+<pre>
+  Find Min or Max with sort()
+  After you have sorted an array, you can use the index to obtain the highest and lowest values.
+  Note!
+  Sorting an whole array if not a very efficient method if you only want to find the highest or lowest value.
+</pre>
+<hr/>
+
+
+
+<div class="row">
+      <div class="col-sm">
+        <h2>Math.min()</h2>
+      <p>You can use <span class="red">Math.min()</span> to find the lowest numebr in an array:</p>
+      Example:<br/>
+      function myArrayMin(arr){<br/>
+       return Math.min.apply(null, arr);<br/>
+      }<br/>
+    <p class="demo">The lowest number is <span id="demo44"></span>.</p>
+
+<script>
+const point = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo44").innerHTML = myArrayMin(point);
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+</script>
+<hr/>      
+      </div>
+      <div class="col-sm">
+        <h2>Math.max() </h2>
+      <p>You can use <span class="red"> Math.max.apply</span> to find the highest numebr ina an array.</p>
+      Example:<br/>
+      function myArrayMin(arr){<br/>
+       return Math.max.apply(null, arr);<br/>
+      }<br/>
+    <p class="demo">The highest number is <span id="demo46"></span>.</p>
+    <script>
+const pointes = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo46").innerHTML = myArrayMax(pointes);
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+</script>
+      
+      
       
       </div>
-      <div class="col-sm"> <h2>Math.min()</h2></div>
     </div>
 <div class="row">
-      <div class="col-sm"> <h2>Math.max()</h2></div>
-      <div class="col-sm"> <h2>Home made Min() </h2></div>
-    </div>
-<div class="row">
-      <div class="col-sm"> <h2>Home made Max()</h2></div>
-      <div class="col-sm"> <h2> Array </h2></div>
+      <div class="col-sm">
+        <h2>Home made Min()</h2>
+      The fastest code to find the lowest number is to use a <b> home made </b>method.<br/>
+      The function loops through an array comparing each value with the lowest value found:<br/>
+      function myArrayMin(arr){<br/>
+        let len = arr.length;<br/>
+        let min = Infinity;<br/>
+        while (len --){<br/>
+          if (arr[len] < min) {<br/>
+            min = arr.[len];<br/>
+
+          }<br/>
+
+        }<br/>
+       return min;<br/>
+      }<br/>
+    <p class="demo">The lowest number is <span id="demo48"></span>.</p>
+
+<script>
+const pointss = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo48").innerHTML = myArrayMin(pointss);
+
+function myArrayMin(arr) {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
+</script>  
+   <hr/> 
+      </div>
+      <div class="col-sm"> 
+        <h2>Home made Max()</h2>
+      The fastest code to find the highest number is to use a <b> home made </b>method.<br/>
+      The function loops through an array comparing each value with the highest value found:<br/>
+      function myArrayMax(arr){<br/>
+        let len = arr.length;<br/>
+        let max = Infinity;<br/>
+        while (len --){<br/>
+          if (arr[len] < max) {<br/>
+            max = arr.[len];<br/>
+
+          }<br/>
+
+        }<br/>
+       return max;<br/>
+      }<br/>
+    <p class="demo">The highest number is <span id="demo50"></span>.</p>
+
+<script>
+const pointsss = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo50").innerHTML = myArrayMax(pointsss);
+
+function myArrayMin(arr) {
+  let len = arr.length;
+  let max = Infinity;
+  while (len--) {
+    if (arr[len] < max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+</script>  
+   <hr/> 
+      
+      
+      </div>
     </div>
 
 

@@ -48,7 +48,7 @@
             <hr/>
     <div class="row">
       <div class="col-sm"> 
-        <h2> Array toSortted()</h2>
+        <h2> Array toSorted()</h2>
       <p> <span class="red">toSorted()</span> method as a safe way t0 sort an array without altering the original array. </p>
       <span class="red">toSorted()</span> => keeps the original array unchanged and creates a new array;<br/>
       <span class="red">sort()</span> =>alters the existing array;<br/>
@@ -57,14 +57,88 @@
       <span class="demo">Apr,Feb,Jan,Mar</span>
       <hr/>
       </div>
-      <div class="col-sm"> <h2> Array toReversed() </h2></div>
+      <div class="col-sm">
+        <h2> Array toReversed() </h2>
+  <p> <span class="red">toReverse</span> method as a safe way to reverse an array without aletring the oroginal array.</p>
+  <span class="red">toReverse()</span> => keeps the original array unchanged and creates a new array;<br/>
+  <span class="red">reverse()</span> =>alters the existing array;<br/>  
+  <span class="blue">const</span> months = [<span>"Jan", "Febr" , "Mar", Apr </span>];<br/>
+      <span class="blue">const</span> reverse = months.toReversed();<br/>
+      <span class="demo">  </span>
+      <hr/>
+     </div>
     </div>
    <div class="row">
-      <div class="col-sm"> <h2> Array Objects </h2></div>
-      <div class="col-sm"> <h2> Numeric Sort </h2></div>
+      <div class="col-sm"> 
+        <h2> Numeric Sort</h2>
+        <pre>
+By default, the <span class="red">sort() </span> function sorts values as <b>strings.</b>
+This works well for strips ("Apple" comes before "Banana").
+If numebrs are soreted as strings, "25" is bigger than "100", because "2" is bigger than "1" .
+Because of this, the <span class="red"> sort()</span> methods will produce incorrect result when sorting numbers.
+You can fix this by prviding a <b>compare function.</b>
+        </pre>
+  Example:<br/>
+  <span class="blue"> const</span> points = [<span class="red">40, 100, 1, 5, 25, 10</span>];<br/>
+  points.sort(function(a, b){return a - b });<br/>
+  <span class="demo">1,5,10,25,40,100</span> 
+<p>Can be used the same trick to write a descending array:</p>
+  <span class="blue"> const</span> points = [<span class="red">40, 100, 1, 5, 25, 10</span>];<br/>
+  points.sort(function(a, b){return b - a  });<br/>
+  <span class="demo">100,40,25,10,5,1 </span> 
+  <hr/>
+      </div>
     </div>
+    <div>
+      <div class="col-sm">
+    <h2>The compare function</h2>
+    <pre>
+      The purpose of the compare function is to define an alternative sort order.
+      The compare function should return a negative, zero or positive value, depending on the arguments:
+      <span class="demo">function (a, b {return a - b })</span><br/>
+      When the <span class="red ">sort()</span> functions compare two values, it sends the values to the compare function, 
+      and sorts the values according to the returned (negative, zero or positive) value.
+      If the result is negative, <span class="red">a </span> is sorted before <span class="red"> b</span><div class=""></div>    
+      If the result is positive, <span class="red">b </span>is sorted before <span class="red">b</span>. 
+      If the result is 0, no changes are done with the sort order of the two values.
+    </pre>
+    <span class="demo">Example:</span><br/>
+    <pre>
+      The compare function compares all the values in the array, two values at a time
+       <span class="red"> (a - b )</span>. 
+       When comparing 40 and 100, the <span class="red"> sort()</span> method calls the compare function (40, 100).
+       The function calculates 40 - 100 <span class="red">(a - b)</span>, and sice the result is negative(-60), the sort function will sort 40 as a value lower than 100.
+       You can use this code snippet to experiment with numerically and alphabetically sorting:
+       <button onclick="myFunction1()">Sort Alphabetically</button>
+       <button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo22"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo22").innerHTML = points;
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo22").innerHTML = points;
+}
+
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo22").innerHTML = points;
+}
+</script>
+      
+    </pre>
+</div>
+</div>
 <div class="row">
-      <div class="col-sm"> <h2>Random Sort</h2></div>
+      <div class="col-sm">
+        <h2>Random Sort</h2>
+      <p>Sorting an Array in a Random Order<br/>
+      Using a sort function, like exaplained above, you can sort a numeric array in random order. </p>
+      
+      </div>
       <div class="col-sm"> <h2>Math.min()</h2></div>
     </div>
 <div class="row">

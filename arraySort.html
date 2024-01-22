@@ -10,9 +10,74 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>Array Sort</title>
 </head>
 <body>
+  <h1>
+    Array Sorting 
+  </h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm"> 
+        <h2> Array Sort() </h2>
+      <p><span>sort()</span> method sorts an array alphabetically.</p>
+       Example:<br/>
+            <span class="blue">const </span>fruits = [<span class="red">"Apple", "Orange", "Apple", "Mango"</span>];<br/>
+            fruits.sort();<br/>
+            <span class="demo" class="demo">Apple,Banana,Mango,Orange </span><br/>
+            <hr/>
+      </div>
+      <div class="col-sm"> 
+        <h2> Array reverse()</h2>
+       <p><span>reverse()</span> list the array elements from the end to start.</p>
+       Example:<br/>
+            <span class="blue">const </span>fruits = [<span class="red">"Apple", "Orange", "Apple", "Mango"</span>];<br/>
+            fruits.reverse();<br/>
+            <span class="demo2" class="demo"> Mango,Apple,Orange,Banana</span><br/>
+            <hr/>
+      </div>
+    </div>
+    <p class="blue ">The sort() and reverse() can be used combined, as in the example bellow:<br/>
+    The sort() will arrange them in an alphabetical order, and the reverse will arrange them from teh z to a . </p>
+    Example:<br/>
+            <span class="blue">const </span>fruits = [<span class="red">"Apple", "Orange", "Apple", "Mango"</span>];<br/>
+            fruits.sort()<br/>
+            fruits.reverse();<br/>
+            <span class="demo4" class="demo">Orange,Mango,Banana,Apple </span><br/>
+            <hr/>
+    <div class="row">
+      <div class="col-sm"> 
+        <h2> Array toSortted()</h2>
+      <p> <span class="red">toSorted()</span> method as a safe way t0 sort an array without altering the original array. </p>
+      <span class="red">toSorted()</span> => keeps the original array unchanged and creates a new array;<br/>
+      <span class="red">sort()</span> =>alters the existing array;<br/>
+      <span class="blue">const</span> months = [<span>"Jan", "Febr" , "Mar", Apr </span>];<br/>
+      <span class="blue">const</span> sorted = months.toSorted();<br/>
+      <span class="demo">Apr,Feb,Jan,Mar</span>
+      <hr/>
+      </div>
+      <div class="col-sm"> <h2> Array toReversed() </h2></div>
+    </div>
+   <div class="row">
+      <div class="col-sm"> <h2> Array Objects </h2></div>
+      <div class="col-sm"> <h2> Numeric Sort </h2></div>
+    </div>
+<div class="row">
+      <div class="col-sm"> <h2>Random Sort</h2></div>
+      <div class="col-sm"> <h2>Math.min()</h2></div>
+    </div>
+<div class="row">
+      <div class="col-sm"> <h2>Math.max()</h2></div>
+      <div class="col-sm"> <h2>Home made Min() </h2></div>
+    </div>
+<div class="row">
+      <div class="col-sm"> <h2>Home made Max()</h2></div>
+      <div class="col-sm"> <h2> Array </h2></div>
+    </div>
+
+
+  </div>
     
 </body>
 </html>

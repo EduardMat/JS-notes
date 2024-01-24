@@ -16,8 +16,61 @@
   <h1>Array Iteration</h1>  
 <div class="container">
 <div class="row">
-  <div class="col-sm">Array forEach </div>
-  <div class="col-sm">Array map()</div>
+  <div class="col-sm">
+    <h2>Array forEach</h2> 
+  <p>The <span class="red">forEach()</span> method calls a function (a callback function) once for each array element.This function can take 3 parameters.</p>
+<span class="blue">const </span> numbers = [<span class="red">45, 4, 9, 16, 25</span>];<br/>
+<span class="blue"> let </span> txt = "  "; <br/>
+numbers.forEach(myFunction);<br/>
+<br/>
+<br/>
+<span class="blue"> function</span> myFunction(value, index, array){<br/>
+   txt += value + " br/>" <br/>
+}<br/>
+<p id="demo" class="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+</script>
+  <hr/>
+  </div>
+
+
+  <div class="col-sm">
+    <h2>Array map()</h2>
+    <p>The <span class="red">map() </span> creates a new array by performing a function on each array element.<br/>
+    The <span class="red">map()</span> does not execute the function for array elements without values.<br/>
+  The <span class="red">map()</span> does not change the original array.</p>
+  Example:<br>
+  Each array value will be multiplies by 2:<br/>
+  const numbers1 =  [45, 4, 9, 16, 25];<br/>
+  const numbers2 = numbers1.map(myFunction);<br/>
+  <br/>
+  function myFunction(value, index, array){<br/>
+  return value * 2; <br/>
+  }<br/>
+  <p id="demo2" class="demo"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo2").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+</script>
+<hr/>
+  </div>
 </div>
 
 <div class="row">

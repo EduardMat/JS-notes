@@ -74,7 +74,23 @@ function myFunction(value, index, array) {
 </div>
 
 <div class="row">
-  <div class="col-sm">Array flatMap()</div>
+  <div class="col-sm">
+    <h2> Array flatMap()</h2>
+<p><span>flatMap()</span> method first maps all the elements of an 
+  array and then creates a new array by flatenning the array.</p>
+  Example:<br/>
+  <span class="blue">const </span> myArr = [<span class="red">1, 2, 3, 4, 5, 6</span>];<br/>
+  <span class="blue"> const </span> myArray = myArr.flatMap((x) =>x * 2);<br/>
+  <p id="demo"></p>
+
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+const newArr = myArr.flatMap((x) => x * 2);
+document.getElementById("demo").innerHTML = newArr;
+</script>
+<hr/>
+</div>
+
   <div class="col-sm">Array filter()</div>
 </div>
 

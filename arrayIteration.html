@@ -126,8 +126,70 @@ function myFunction(value, index, array) {
 </div>
 
 <div class="row">
-  <div class="col-sm">Array reduce()</div>
-  <div class="col-sm">Array reduceRight()</div>
+  <div class="col-sm">
+   <h2>Array reduce()</h2>
+   <p><span>reduce()</span> runs a function on each array element to produce (reduce it to) a single value.<br/>
+  This method works from left-to -right in the array.</p>
+  Example:<br/>
+  const numbers = [45, 4, 9, 16, 25];<br/>
+  let sum = numbers.reduce(myFunction);<br/>
+  function myFunction(total, value, index, array){<br/>
+  return total + value;<br/>
+  }<br/>
+  <p id="demo10" class="demo"></p>
+
+<script>
+const numberss = [45, 4, 9, 16, 25];
+let sum = numberss.reduce(myFunction);
+
+document.getElementById("demo10").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+</script>
+  Note that the functions takes 4 arguments :<br/>
+  <ul>
+    <li>the total (initial value, previous returned value)</li>
+    <li>the item value</li>
+    <li>the item index </li>
+    <li>the array itself</li>
+  </ul>
+  <hr/>
+  </div>
+  <div class="col-sm">
+    <h2>Array reduceRight()</h2>
+     <p>reduceRight() runs a functions on each array element to produce(reduce it to) to a single value.
+      reduceRight() works from right to left in the array.
+     </p>
+     Example:<br/>
+     cont numbers  = [45, 4, 9, 16, 25];<br/>
+     let sum = numebrs.reduceRight(myFunction);<br/>
+     function myFunction(total, value, index, array){<br/>
+     return total + value;<br/>
+     }<br/>
+
+
+<p id="demo14" class="demo"></p>
+Note that the functions takes 4 arguments :<br/>
+  <ul>
+    <li>the total (initial value, previous returned value)</li>
+    <li>the item value</li>
+    <li>the item index </li>
+    <li>the array itself</li>
+  </ul>
+<script>
+const nnumbers = [45, 4, 9, 16, 25];
+let sums = nnumbers.reduceRight(myFunction);
+
+document.getElementById("demo14").innerHTML = "The sum is " + sums;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+</script>
+<hr/>
+    </div>
 </div>
 
 <div class="row">

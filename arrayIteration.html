@@ -163,7 +163,7 @@ function myFunction(total, value, index, array) {
       reduceRight() works from right to left in the array.
      </p>
      Example:<br/>
-     cont numbers  = [45, 4, 9, 16, 25];<br/>
+     cont numbers  = [45, 4, 9, 22, 25];<br/>
      let sum = numebrs.reduceRight(myFunction);<br/>
      function myFunction(total, value, index, array){<br/>
      return total + value;<br/>
@@ -179,7 +179,7 @@ Note that the functions takes 4 arguments :<br/>
     <li>the array itself</li>
   </ul>
 <script>
-const nnumbers = [45, 4, 9, 16, 25];
+const nnumbers = [45, 4, 9, 22, 25];
 let sums = nnumbers.reduceRight(myFunction);
 
 document.getElementById("demo14").innerHTML = "The sum is " + sums;
@@ -193,13 +193,106 @@ function myFunction(total, value, index, array) {
 </div>
 
 <div class="row">
-  <div class="col-sm">Array every()</div>
-  <div class="col-sm">Array some()</div>
+  <div class="col-sm">
+   <h2>Array every()</h2>
+  <p><span class="red">every</span> method checks if all array values pass a test.<br/>
+  This example checks if all arrays values are larger than 18.</p>
+  Example:<br/>
+  const numberN = [40,25, 15, 5, 35, 30];<br/>
+  let allOver18 = numberN.every(myFunction);<br/>
+  function myFunction(value, index, array){<br/>
+   return value > 18;<br/>
+  }<br/>
+  <p id="demo16" class="demo"></p>
+  Note that the functions takes 3 arguments :<br/>
+  <ul>
+    <li>the item value</li>
+    <li>the item index </li>
+    <li>the array itself</li>
+  </ul>
+<script>
+const numberN = [40, 25, 15, 5, 35, 30];
+let allOver18 = numberN.every(myFunction);
+
+document.getElementById("demo16").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+<hr/> 
+  </div>
+  <div class="col-sm">
+    <h2>Array some()</h2>
+    <p><span class="red">some()</span> checks if some array values pass a test.<br/>
+    This example checks if some array values are larger than 18.</p>
+    Example:<br/>
+    const numbersN = [40,25, 15, 5, 35, 30];<br/>
+  let someOver18 = numbersN.every(myFunction);<br/>
+  function myFunction(value, index, array){<br/>
+   return value > 18;<br/>
+  }<br/>
+  <p id="demo18" class="demo"></p>
+  Note that the functions takes 3 arguments :<br/>
+  <ul>
+    <li>the item value</li>
+    <li>the item index </li>
+    <li>the array itself</li>
+  </ul>
+<script>
+const numbersN = [40, 25, 15, 5, 35, 30];
+let someOver18 = numbersN.some(myFunction);
+
+document.getElementById("demo18").innerHTML = "Some over 18 is " + someOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+<hr/> 
+  </div>
 </div>
 
 <div class="row">
-  <div class="col-sm">Array from()</div>
-  <div class="col-sm">Array keys()</div>
+  <div class="col-sm">
+    <h2>Array from()</h2>
+<p><span class="red">Array.from()</span> returns an Array object from any object with a length property or any iterable object.</p>
+Example:<br/>
+Array.from("ABCDEFG");<br/>
+const myArrs = Array.from("ABCDEFG123");<br>
+document.getElementById("demo20").innerHTML = myArrs;<br/>
+<p id="demo20" class="demo"></p>
+
+<script>
+const myArrs = Array.from("ABCDEFG123");
+document.getElementById("demo20").innerHTML = myArrs;
+</script>
+<hr/>
+</div>
+  <div class="col-sm">
+    <h2>Array keys()</h2>
+  <p><span>Array.keys()</span> returns an Array Iterator object with the keys of an array.</p>
+  Example:<br/>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+  const keys = fruits.keys();<br/>
+  for (let x of keys){<br/>
+text += x + "br>";<br/>
+  }<br/>
+<p id="demo22" class="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
+
+let text = "";
+for (let x of keys) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo22").innerHTML = text;
+</script>
+<hr/>
+  </div>
 </div>
 
 <div class="row">

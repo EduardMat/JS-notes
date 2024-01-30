@@ -296,8 +296,46 @@ document.getElementById("demo22").innerHTML = text;
 </div>
 
 <div class="row">
-  <div class="col-sm">Array entries()</div>
-  <div class="col-sm">Array with()</div>
+  <div class="col-sm">
+   <h2>Array entries()</h2>
+  <p>Array.entries() create an array Iterator and then over the key/value pairs:</p>
+  Example:<br/>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+  const f = fruits.entries();<br/>
+  for (let x of f ){<br/>
+  document.getElementById("demo").innerHTML += x;<br/>
+  }<br/>
+  <p id="demo24" class="demo"></p>
+
+<script>
+const fruites = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruites.entries();
+
+for (let x of f) {
+  document.getElementById("demo24").innerHTML += x + "<br>";
+}
+</script>
+  <hr/>
+  </div>
+  <div class="col-sm">
+   <h2> Array with()</h2>
+   <p>array with() has been added as a safe method of updating 
+    elements in an array without altering the original array.</p>
+  Example:<br/>
+  const months = ["Januar", "Februar", "Mar", "March"];<br/>
+  const myMonths = months.with(2, "March")<br/>
+  <p id="demo26" class="demo"></p>
+
+<script>
+const months = ["Januar", "Februar", "Mar", "April"];
+const myMonths = months.with(2, "March");
+
+document.getElementById("demo26").innerHTML = myMonths;
+</script>
+
+  
+  
+  </div>
 </div>
 
 <div class="row">

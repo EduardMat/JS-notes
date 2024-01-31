@@ -18,6 +18,7 @@
   It has become a common practice to declare arrays - const.
   Example:
   const cars = ["Saab", "Volvo", "BMW"];
+  <hr/>
 </pre>
 <h2>Const cannot be reassigned.</h2>
 <pre>
@@ -29,6 +30,7 @@ cars = ["Toyota", "Volvo", "Audi"];    // ERROR
 <pre>The keyword const is a little misleading.
   It does NOT define a constant array.It defines a constant reference to an array.
   Because of this, we can still change the elements of a constant array.
+  <SPAN>ELEMENTS CAN BE CHANGED.</SPAN>
   You can change the elements of a constant array. 
   Example:
   // You can create a constant array:
@@ -39,19 +41,26 @@ cars[0] = "Toyota";
 
 // You can add an element:
 cars.push("Audi");
-
+<hr/>
 </pre>
+<h2>Assigned when declared </h2>
+<pre>
+  JS  const variables must be assigned a value when they are declared:
+  Meaning:an array declared with const muct be initialized when it is declared.
+  Using const withour initializing the array is a syntax error:
+  Example:
+  const cars;
+cars = ["Saab", "Volvo", "BMW"];   ===>This is wrong, does not work 
+</pre>
+Arrays with var can be initialized at any time.<br/>
+You can even use the array before it is declared.<br/>
+Example:<br/>
+cars = ["Saab", "Volvo", "BMW"];<br/>
+var cars;<br/>
 
+<hr/>
 
-
-
-
-
-
-
-
-
-  <h2>CONST</h2>
+<h2>CONST</h2>
   <pre>
    1.  An array declared with <span class="red">const </span> has <b>Block Scope</b>. 
     An array declared in a block scope is not the same as an array declared outside the block:
@@ -64,6 +73,7 @@ cars.push("Audi");
 }</span>
 // Here cars[0] is "Saab"
   </pre>
+  <hr/>
     <h2>VAR </h2>
   <pre>
    2. An array declared with <span class="red"> var </span> does not have a block scope:
@@ -75,7 +85,7 @@ cars.push("Audi");
   // Here cars[0] is "Toyota"
 }</span>
 // Here cars[0] is "Toyota"
-
+<hr/>
 <h2>REDECLARING ARRAYS </h2>
   </pre>
 

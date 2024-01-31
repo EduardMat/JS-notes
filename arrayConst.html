@@ -88,7 +88,44 @@ var cars;<br/>
 <hr/>
 <h2>REDECLARING ARRAYS </h2>
   </pre>
+Redeclaring an array declared with VAR is allowed anywhere in a program.
+Example:
+var cars = ["Volvo", "BMW"];   // Allowed
+var cars = ["Toyota", "BMW"];  // Allowed
+cars = ["Volvo", "Saab"];      // Allowed
 
+Redeclaring or reassigning an array to CONST, is the same scope, or in the same block, is not allowed.
+Example:
+var cars = ["Volvo", "BMW"];     // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+{
+  var cars = ["Volvo", "BMW"];   // Allowed
+  const cars = ["Volvo", "BMW"]; // Not allowed
+}
+
+Redeclaring or reassigining an existing CONST array, in the same scope, or in the same block, is not allowed.
+Example:
+const cars = ["Volvo", "BMW"];   // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+var cars = ["Volvo", "BMW"];     // Not allowed
+cars = ["Volvo", "BMW"];         // Not allowed
+
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+  const cars = ["Volvo", "BMW"]; // Not allowed
+  var cars = ["Volvo", "BMW"];   // Not allowed
+  cars = ["Volvo", "BMW"];       // Not allowed
+}
+
+Redeclaring an array with CONST, in another scope, or in another block, is allowed.
+Example:
+const cars = ["Volvo", "BMW"];   // Allowed
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+}
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+}
   <pre>
 
   </pre>

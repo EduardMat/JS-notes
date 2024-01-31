@@ -10,9 +10,40 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>Array Const </title>
 </head>
 <body>
-    
+  <h1>Array Const </h1>
+  <h2>CONST</h2>
+  <pre>
+   1.  An array declared with <span class="red">const </span> has <b>Block Scope</b>. 
+    An array declared in a block scope is not the same as an array declared outside the block:
+    Example:
+    const cars = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+<span class="blue">{
+  const cars = ["Toyota", "Volvo", "BMW"];
+  // Here cars[0] is "Toyota"
+}</span>
+// Here cars[0] is "Saab"
+  </pre>
+    <h2>VAR </h2>
+  <pre>
+   2. An array declared with <span class="red"> var </span> does not have a block scope:
+    Example:
+    var cars = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+<span class="blue">{
+  var cars = ["Toyota", "Volvo", "BMW"];
+  // Here cars[0] is "Toyota"
+}</span>
+// Here cars[0] is "Toyota"
+
+<h2>REDECLARING ARRAYS </h2>
+  </pre>
+
+  <pre>
+
+  </pre>
 </body>
 </html>

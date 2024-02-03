@@ -17,9 +17,40 @@
    <pre>
     JS <b>DATA OBJECTS </b> let us work with dates:
     <b>SAT Feb 03 2024 07:32:17 GMT + 0000(Greenwhich Mean Time)</b>
-   </pre>
+   Date objects are static.The clock is not running.
+   A usual clock is ticking, date objects do not.
+  
+  </pre>
    Example:<br/>
    <span class="blue">const </span> d = <span class="blue"> new </span> Date();
-   <span class="demo">Sat Feb 03 2024 07:48:28 GMT+0000</span><br/>
+   <p id="demo" class="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+<hr/>
+<h2>Creating Date Objects </h2>
+<pre>
+  Date objects are created with the <span class="red">new Date</span> constructor.
+  There are <b>9 ways </b> to create a new date objects.
+  
+<span class="blue"> new</span> Date()
+<span class="blue"> new</span> Date(date string)
+
+<span class="blue"> new</span> Date(year,month)
+<span class="blue"> new</span> Date(year,month,day)
+<span class="blue"> new</span> Date(year,month,day,hours)
+<span class="blue"> new</span> Date(year,month,day,hours,minutes)
+<span class="blue"> new</span> Date(year,month,day,hours,minutes,seconds)
+<span class="blue"> new</span> Date(year,month,day,hours,minutes,seconds,ms)
+
+<span class="blue"> new</span> Date(milliseconds)
+</pre>
+
+
+
+
+
 </body>
 </html>

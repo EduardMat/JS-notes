@@ -197,7 +197,7 @@ table {
   color:rgb(41, 40, 40);
   background-color: rgb(226, 221, 221);
   font-weight: 800;
-  border:1px solid grey;
+  border:1px solid orange;
   border-radius: 4px;
   max-width: fit-content;
 }

@@ -123,7 +123,8 @@ table {
 
 .row{
   background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
-}
+   border-radius: 5px;
+} 
 
 .blue{
   color:rgb(45, 45, 164);

@@ -82,7 +82,7 @@ table {
 
     .columns{
   border:1px solid blue;
-  background-color: rgb(221, 221, 120);
+  background-color:#00F700;
     }
 
 
@@ -119,6 +119,10 @@ table {
 .red{
     color:rgb(243, 84, 84);
     font-weight: bolder;
+}
+
+.row{
+  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
 }
 
 .blue{

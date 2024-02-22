@@ -80,6 +80,10 @@ table {
       font-size: 15px;
     }
 
+    .columns{
+  border:1px solid blue;
+  background-color: rgb(221, 221, 120);
+    }
 
 
 .container{

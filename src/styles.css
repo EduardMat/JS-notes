@@ -12,6 +12,8 @@ h1{
     color:rgb(64, 203, 150);
     text-align: center;
     padding:11px;
+    border: 1px solid grey;
+    background-color: rgb(210, 208, 208);
 }
 
 h2{

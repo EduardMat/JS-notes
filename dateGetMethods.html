@@ -10,9 +10,61 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Document</title>
+    <title>GetDateMethods</title>
 </head>
 <body>
+    <h1>Get Date Methods</h1>
+    <h2>The new Date() Constructor</h2>
+    <pre>
+      In JS, date objects are created with <span class="red">new Date()</span>. 
+      <span>new Date()</span> returns a date object with the current date and time.
+      const date = <span class="blue"> date </span> Date();
+      <span class="demo">Thu Feb 29 2024 17:57:17 GMT+0000</span>
+    </pre>
+
+<div class="one"><span class="red">getFullYear() </span>===> Get year as a four digit number (yyyy)</div>
+<div class="two"><span class="red">getMonth() </span>===>Get month as a number (0-11) </div>
+<div class="one"><span class="red">getDate()</span>===>Get day as a number (1-31)</div>
+<div class="two"><span class="red">getDay() </span>===>Get weekday as a number (0-6)</div>
+<div class="one"><span class="red">getHours()</span>===> Get hour (0-23)</div>
+<div class="two"><span class="red">getMinutes() </span> ===>Get minute (0-59)</div>
+<div class="one"><span class="red">getSeconds()</span>===> Get second (0-59)</div>
+<div class="two"><span class="red">getMiliseconds()</span>===> Get millisecond (0-999)</div>
+<div class="one"><span class="red">getTime()</span>===> Get time (milliseconds since January 1, 1970)
+ </div>
+ <div class="note">the get methods above return <b> Local time</b>.<br/>
+<b>Universal time</b> (UTC) is documented at the buttom of this page</div>.
+
+<div class="note">
+The get methods return information from existing date objects.
+In a date object, the time is static.The "clock" is not "running". 
+The time in a date object is NOT the same as current time.
+</div>
+
+<h2>The fetFullYear() Method</h2>
+<p>The <span class="red"> getFullYear() </span> methods returns the year of a date as a four digit number:</p>
+<p class="example">Example:</p>
+<span class="demo">
+const d = new Date("2021-03-25");<br/>
+d.getFullYear();<br/>
+2021
+</span>
+<p class="example">Example:</p>
+<span class="demo">
+const d = new Date();<br/>
+d.getFullYear();<br/>
+2024
+</span>
+
+<h2>The getMonth() Method</h2>
+<p>The <span class="red"> getMonth()</span> method returns the moth of a date as a number(0-11)</p>
+<p class="note"> In JS, January is month 0, February is number 1, and December is number 11.  </p>
+<p class="example ">Example:</p>
+<p class="demo"> 
+const d = new Date("2021-03-25");<br/>
+d.getMonth(); <br/>
+</p>
+
     
 </body>
 </html>

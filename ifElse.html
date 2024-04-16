@@ -27,5 +27,29 @@
       4.Use <span class="blue">switch </span> to specify many alternative blocks of code to be executed.
       <span class="note">The SWITCH statement is described in the next chapter.</span>
     </pre>
+<h2>The <span class= "blue">switch</span> statement </h2>
+<pre>Use the <span class= 2blue>if </span> statement to specify a block of JS code to be executed if a condition is true.
+Syntax:
+if (condition ) {
+  // block of code to be executed if the condition is true
+}
+</pre>
+<p class="note">
+Note that <span class=" blue"> if </span> is in lowercase letter.Uppercarse letters (If or IF )
+will generate a JS error.</p>
+
+Example:<br/>
+Make a "Good Day" geeting if the hours is less than 18:00:<br/>
+
+The results will be:
+<p class="demo" id="demo"> </p>
+
+
+<script>
+if (new Date().getHours() < 18){
+  document.getElementById("demo").innerHTML = "Good Day!";
+}
+</script>
+
 </body>
 </html>

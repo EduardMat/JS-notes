@@ -27,7 +27,7 @@
       4.Use <span class="blue">switch </span> to specify many alternative blocks of code to be executed.
       <span class="note">The SWITCH statement is described in the next chapter.</span>
     </pre>
-<h2>The <span class= "blue">switch</span> statement </h2>
+<h2>1. The <span class= "blue">switch</span> statement </h2>
 <pre>Use the <span class= 2blue>if </span> statement to specify a block of JS code to be executed if a condition is true.
 Syntax:
 if (condition ) {
@@ -44,12 +44,37 @@ Make a "Good Day" geeting if the hours is less than 18:00:<br/>
 The results will be:
 <p class="demo" id="demo"> </p>
 
+<h2>2. The <span class="blue"> else </span> statement </h2>
+<pre>
+  Use the <span class="blue">else </span> statement to specify a block of code to be executed if the condition is false.
+   if (condition) {
+    // block to be executed if the condition is true
+   }else{
+    //block to be executed if the condition is false 
+   }
+   
+</pre>
+Example:<br/>
+If the hour is less than 18, create a "Good day" greeting, otherwise "Good Evening".<br/>
+The result will be:<br/>
+<p class="demo" id="demo1"></p>
+
 
 <script>
 if (new Date().getHours() < 18){
   document.getElementById("demo").innerHTML = "Good Day!";
 }
+
+const hour = new Date().getHours();
+let greeting;
+if (hour <18 ){
+  greeting = "Good Day!" ;
+  }else{
+    greeting = "Good Evening!"
+  }
+  document.getElementById("demo1").innerHTML = greeting;
 </script>
+
 
 </body>
 </html>

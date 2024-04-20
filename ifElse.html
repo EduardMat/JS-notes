@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,10 +10,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>If Else </title>
-</head>
-<body>
-    <h1>If, Else and Else if  </h1>
+    <title>If Else</title>
+  </head>
+  <body>
+    <h1>If, Else and Else if</h1>
     <pre>
      Conditional statements are used to perform different actions based on different conditions.
     </pre>
@@ -27,25 +27,26 @@
       4.Use <span class="blue">switch </span> to specify many alternative blocks of code to be executed.
       <span class="note">The SWITCH statement is described in the next chapter.</span>
     </pre>
-<h2>1. The <span class= "blue">switch</span> statement </h2>
-<pre>Use the <span class= 2blue>if </span> statement to specify a block of JS code to be executed if a condition is true.
+    <h2>1. The <span class="blue">switch</span> statement</h2>
+    <pre>Use the <span class= 2blue>if </span> statement to specify a block of JS code to be executed if a condition is true.
 Syntax:
 if (condition ) {
   // block of code to be executed if the condition is true
 }
 </pre>
-<p class="note">
-Note that <span class=" blue"> if </span> is in lowercase letter.Uppercarse letters (If or IF )
-will generate a JS error.</p>
+    <p class="note">
+      Note that <span class="blue"> if </span> is in lowercase letter.Uppercarse
+      letters (If or IF ) will generate a JS error.
+    </p>
 
-Example:<br/>
-Make a "Good Day" geeting if the hours is less than 18:00:<br/>
+    Example:<br />
+    Make a "Good Day" geeting if the hours is less than 18:00:<br />
 
-The results will be:
-<p class="demo" id="demo"> </p>
+    The results will be:
+    <p class="demo" id="demo"></p>
 
-<h2>2. The <span class="blue"> else </span> statement </h2>
-<pre>
+    <h2>2. The <span class="blue"> else </span> statement</h2>
+    <pre>
   Use the <span class="blue">else </span> statement to specify a block of code to be executed if the condition is false.
    if (condition) {
     // block to be executed if the condition is true
@@ -54,27 +55,58 @@ The results will be:
    }
    
 </pre>
-Example:<br/>
-If the hour is less than 18, create a "Good day" greeting, otherwise "Good Evening".<br/>
-The result will be:<br/>
-<p class="demo" id="demo1"></p>
+    Example:<br />
+    If the hour is less than 18, create a "Good day" greeting, otherwise "Good
+    Evening".<br />
+    The result will be:<br />
+    <p class="demo" id="demo1"></p>
 
-
-<script>
-if (new Date().getHours() < 18){
-  document.getElementById("demo").innerHTML = "Good Day!";
-}
-
-const hour = new Date().getHours();
-let greeting;
-if (hour <18 ){
-  greeting = "Good Day!" ;
+    <h2>3. The <span class="blue"> else if </span> statement</h2>
+    <pre>
+  The <span class=" blue"></span> statement tp specify a new condition if
+   the first condition is false.
+  Syntax:
+  if (condition1){
+    //block to be executed if the condition is true 
+  }else if (condition2 ){
+    //block to be executed if the condition1 is false and condition2 is true
   }else{
-    greeting = "Good Evening!"
+    //code to be executed if the contition1 is false and condition2 is false
   }
-  document.getElementById("demo1").innerHTML = greeting;
-</script>
 
+  If time is less than 10:00, create a "Good morning" greeting, if not,
+   but time is less than 20:00, 
+  create a "Good day" greeting, otherwise a "Good evening":
+  The result will be:
+  </pre>
+    <p class="demo" id="demo2"></p>
 
-</body>
+    <script>
+      //this is the first example
+      if (new Date().getHours() < 18) {
+        document.getElementById("demo").innerHTML = "Good Day!";
+      }
+      //this is the second example
+      const hour = new Date().getHours();
+      let greetings;
+      if (hour < 18) {
+        greetings = "Good Day!";
+      } else {
+        greetings = "Good Evening!";
+      }
+      document.getElementById("demo1").innerHTML = greetings;
+
+      //this is the third example
+      const time = new Date().getHours();
+      let greetingss;
+      if (time < 10) {
+        greetingss = "Good morning";
+      } else if (time < 20) {
+        greetingss = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+      document.getElementById("demo2").innerHTML = greetingss;
+    </script>
+  </body>
 </html>
